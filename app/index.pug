@@ -6,3 +6,174 @@ html(lang="en")
         link(rel="stylesheet", href="./css/style.min.css")
         title Unknown creative studio
     body
+      header.page-header
+        nav.page-header__nav.main-nav
+          ul.main-nav__list
+            li.main-nav__item Works
+            li.main-nav__item About
+            li.main-nav__item Services
+            li.main-nav__item Blog
+            li.main-nav__item Contact
+        h1.visually-hidden Creative studio
+        .page-header__text-wrapper
+          p.page-header__slogan WHERE GREAT IDEAS COME TO LIFE
+          h2.page-header__title Passionate creative studio helping startups grow their business!
+        .page-header__controls-wrapper
+          ul.page-header__controls-list
+            li.page-header__controls-item.page-header__controls-item--active 01
+            li.page-header__controls-item 02
+            li.page-header__controls-item 03
+      main
+        section.about-us
+          h2.about-us__title
+            |WE ARE
+            br
+            span.about-us__title--thin THE SQWD
+          p.about-us__text.about-us__text--up Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+          p.about-us__text.about-us__text--down Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+
+        section.services
+          h2.services__title Our Services
+
+          article.services__article.services-card
+            h3.services-card__title BRANDING
+            img.services-card__image(src="./img/graphic-design.svg" alt="graphic design icon")
+            p.services-card__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+            a.services-card__link(href="#") READ MORE
+
+          article.services__article.services-card
+            h3.services-card__title DESIGN
+            img.services-card__image(src="./img/pencil-case.svg" alt="pencil case icon")
+            p.services-card__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+            a.services-card__link(href="#") READ MORE
+
+          article.services__article.services-card
+            h3.services-card__title DEVELOPMENT
+            img.services-card__image(src="./img/coding.svg" alt="coding icon")
+            p.services-card__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+            a.services-card__link(href="#") READ MORE
+
+        section.portfolio
+          h2.portfolio__title Latest Works
+          nav.portfolio__nav
+            ul.portfolio__nav-list
+              li.portfolio__nav-item ALL
+              li.portfolio__nav-item WEB DESIGN
+              li.portfolio__nav-item BRANDING
+              li.portfolio__nav-item PHOTOGRAPHY
+              li.portfolio__nav-item ILLUSTRATION
+
+          .portfolio__card.portfolio-card
+            h3.portfolio-card__title
+              |100 YEARS
+              br
+              |PHOTOGRAPHY
+            img.portfolio-card__image(src="./img/camera.jpg" alt="camera")
+            h4.portfolio-card__subtitle Photography
+            p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            a.portfolio-card__read-more(href="#") READ MORE
+
+          .portfolio__card.portfolio-card
+            h3.portfolio-card__title
+              |A KITTEN’S
+              br
+              |LIFE
+            img.portfolio-card__image(src="./img/cat.jpg" alt="cat")
+            h4.portfolio-card__subtitle Photography
+            p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            a.portfolio-card__read-more(href="#") READ MORE
+
+          .portfolio__card.portfolio-card
+            h3.portfolio-card__title
+              |GROOVEMADE
+              br
+              |PRODUCTS FOR MAC
+            img.portfolio-card__image(src="./img/mac.jpg" alt="camera")
+            h4.portfolio-card__subtitle Photography
+            p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            a.portfolio-card__read-more(href="#") READ MORE
+
+          .portfolio__card.portfolio-card
+            h3.portfolio-card__title
+              |APPLE’s
+              br
+              |LOST MAGIC
+            img.portfolio-card__image(src="./img/keybord.jpg" alt="camera")
+            h4.portfolio-card__subtitle Photography
+            p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            a.portfolio-card__read-more(href="#") READ MORE
+
+          a.portfolio__view-more(href="#") view more
+
+        section.team
+          h2.team__title The Team
+          .team__card.team-card
+            img.team-card__image(src="./img/Person-1.jpg" alt="photo of Tom Jones")
+            .team-card__text-wrapper
+              h3.team-card__name Tom Jones
+              p.team-card__position Designer
+              p.team-card__slogan Create with simplicity in mind!
+
+          .team__card.team-card
+            img.team-card__image(src="./img/Person-2.jpg" alt="photo of Michael Fraup")
+            .team-card__text-wrapper
+              h3.team-card__name Michael Fraup
+              p.team-card__position Creative Director
+              p.team-card__slogan Create with simplicity in mind!
+
+          .team__card.team-card
+            img.team-card__image(src="./img/Person-3.jpg" alt="photo of Tim Cahill")
+            .team-card__text-wrapper
+              h3.team-card__name Tim Cahill
+              p.team-card__position Developer
+              p.team-card__slogan Create with simplicity in mind!
+
+        section.reviews
+          h2.visually-hidden Reviews
+          blockquote.reviews__blockquote
+            p.reviews__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            p.reviews__author
+              b.reviews__author-name DAVID JAMES
+              | / Web Design
+
+          .rewievs__rating.star-rating
+            span.star-rating.star-rating--active
+            span.star-rating.star-rating--active
+            span.star-rating.star-rating--active
+            span.star-rating.star-rating--active
+            span.star-rating
+
+          .reviews__navigation
+            button.reviews__button.reviews__button--back(type="button" aria-label="Предыдущий отзыв")
+            button.reviews__button.reviews__button--forward(type="button" aria-label="Следующий отзыв")
+
+          section.contacts
+            h2.visually-hidden Contacts
+            .contacts__first-block
+              a.contacts__link(href="#")
+                span.contacts__title Want to work together?
+                br
+                span.contacts__text Amazing. Tell us about your project!
+
+            .contacts__second-block
+              a.contacts__link(href="#")
+                span.contacts__title Contact us
+                br
+                span.contacts__text Get in touch
+
+        footer.page-footer
+          p.page-footer__adress 3rd Floor, Santa Monica Beach, CA, San Francisco
+            br
+            |(359) 0 123 456 789 - info@yourmail.com
+          .page-footer__socials.socials
+            ul.socials__list
+              li.socials__item
+                a.socials__link(href="#")
+              li.socials__item
+                a.socials__link(href="#")
+              li.socials__item
+                a.socials__link(href="#")
+
+
+
+
