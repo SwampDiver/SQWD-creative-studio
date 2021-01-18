@@ -4,20 +4,20 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./css/style.min.css"/>
-    <title>Unknown creative studio</title>
+    <title>SQWD creative studio</title>
   </head>
   <body>
     <header class="page-header">
       <nav class="page-header__nav main-nav">
+        <h1 class="page-header__logo">SQWD</h1>
         <ul class="main-nav__list">
-          <li class="main-nav__item">Works</li>
-          <li class="main-nav__item">About</li>
-          <li class="main-nav__item">Services</li>
-          <li class="main-nav__item">Blog</li>
-          <li class="main-nav__item">Contact</li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Works</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">About</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Services</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Blog</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Contact</a></li>
         </ul>
       </nav>
-      <h1 class="visually-hidden">Creative studio</h1>
       <div class="page-header__text-wrapper">
         <p class="page-header__slogan">WHERE GREAT IDEAS COME TO LIFE</p>
         <h2 class="page-header__title">Passionate creative studio helping startups grow their business!</h2>
@@ -32,34 +32,41 @@
     </header>
     <main>
       <section class="about-us">
-        <h2 class="about-us__title">WE ARE<br/><span class="about-us__title--thin">THE SQWD</span></h2>
+        <h2 class="about-us__title"><span class="about-us__title--bold">WE ARE</span><br/>THE SQWD</h2>
         <p class="about-us__text about-us__text--up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
         <p class="about-us__text about-us__text--down">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
       </section>
       <section class="services">
-        <h2 class="services__title">Our Services</h2>
-        <article class="services__article services-card">
-          <h3 class="services-card__title">BRANDING</h3><img class="services-card__image" src="./img/graphic-design.svg" alt="graphic design icon"/>
-          <p class="services-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p><a class="services-card__link" href="#">READ MORE</a>
-        </article>
-        <article class="services__article services-card">
-          <h3 class="services-card__title">DESIGN</h3><img class="services-card__image" src="./img/pencil-case.svg" alt="pencil case icon"/>
-          <p class="services-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p><a class="services-card__link" href="#">READ MORE</a>
-        </article>
-        <article class="services__article services-card">
-          <h3 class="services-card__title">DEVELOPMENT</h3><img class="services-card__image" src="./img/coding.svg" alt="coding icon"/>
-          <p class="services-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p><a class="services-card__link" href="#">READ MORE</a>
-        </article>
+        <div class="services__content-wrapper">
+          <h2 class="services__title">Our Services</h2>
+          <div class="services__cards-wrapper">
+            <article class="services__article services-card">
+              <h3 class="services-card__title">BRANDING</h3>
+              <div class="services-card__icon-wrapper"><img class="services-card__icon" src="./img/graphic-design.svg" width="25" height="25" alt="graphic design icon"/></div>
+              <p class="services-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p><a class="services-card__link" href="#">READ MORE</a>
+            </article>
+            <article class="services__article services-card">
+              <h3 class="services-card__title">DESIGN</h3>
+              <div class="services-card__icon-wrapper"><img class="services-card__icon" src="./img/pencil-case.svg" width="25" height="25" alt="pencil case icon"/></div>
+              <p class="services-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p><a class="services-card__link" href="#">READ MORE</a>
+            </article>
+            <article class="services__article services-card">
+              <h3 class="services-card__title">DEVELOPMENT</h3>
+              <div class="services-card__icon-wrapper"><img class="services-card__icon" src="./img/coding.svg" width="25" height="25" alt="coding icon"/></div>
+              <p class="services-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p><a class="services-card__link" href="#">READ MORE</a>
+            </article>
+          </div>
+        </div>
       </section>
       <section class="portfolio">
         <h2 class="portfolio__title">Latest Works</h2>
         <nav class="portfolio__nav">
           <ul class="portfolio__nav-list">
-            <li class="portfolio__nav-item">ALL</li>
-            <li class="portfolio__nav-item">WEB DESIGN</li>
-            <li class="portfolio__nav-item">BRANDING</li>
-            <li class="portfolio__nav-item">PHOTOGRAPHY</li>
-            <li class="portfolio__nav-item">ILLUSTRATION</li>
+            <li class="portfolio__nav-item"><a class="portfolio__link" href="#">ALL</a></li>
+            <li class="portfolio__nav-item"><a class="portfolio__link" href="#">WEB DESIGN</a></li>
+            <li class="portfolio__nav-item"><a class="portfolio__link" href="#">BRANDING</a></li>
+            <li class="portfolio__nav-item"><a class="portfolio__link" href="#">PHOTOGRAPHY</a></li>
+            <li class="portfolio__nav-item"><a class="portfolio__link" href="#">ILLUSTRATION</a></li>
           </ul>
         </nav>
         <div class="portfolio__card portfolio-card">

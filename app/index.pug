@@ -4,17 +4,23 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="./css/style.min.css")
-        title Unknown creative studio
+        title SQWD creative studio
     body
       header.page-header
         nav.page-header__nav.main-nav
+          h1.page-header__logo SQWD
           ul.main-nav__list
-            li.main-nav__item Works
-            li.main-nav__item About
-            li.main-nav__item Services
-            li.main-nav__item Blog
-            li.main-nav__item Contact
-        h1.visually-hidden Creative studio
+            li.main-nav__item
+              a.main-nav__link(href="#") Works
+            li.main-nav__item
+              a.main-nav__link(href="#") About
+            li.main-nav__item
+              a.main-nav__link(href="#") Services
+            li.main-nav__item
+              a.main-nav__link(href="#") Blog
+            li.main-nav__item
+              a.main-nav__link(href="#") Contact
+
         .page-header__text-wrapper
           p.page-header__slogan WHERE GREAT IDEAS COME TO LIFE
           h2.page-header__title Passionate creative studio helping startups grow their business!
@@ -26,42 +32,52 @@ html(lang="en")
       main
         section.about-us
           h2.about-us__title
-            |WE ARE
+            span.about-us__title--bold WE ARE
             br
-            span.about-us__title--thin THE SQWD
+            |THE SQWD
           p.about-us__text.about-us__text--up Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
           p.about-us__text.about-us__text--down Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
 
         section.services
-          h2.services__title Our Services
+          .services__content-wrapper
+            h2.services__title Our Services
 
-          article.services__article.services-card
-            h3.services-card__title BRANDING
-            img.services-card__image(src="./img/graphic-design.svg" alt="graphic design icon")
-            p.services-card__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-            a.services-card__link(href="#") READ MORE
+            .services__cards-wrapper
+              article.services__article.services-card
+                h3.services-card__title BRANDING
+                .services-card__icon-wrapper
+                  img.services-card__icon(src="./img/graphic-design.svg" width="25" height="25" alt="graphic design icon")
+                p.services-card__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                a.services-card__link(href="#") READ MORE
 
-          article.services__article.services-card
-            h3.services-card__title DESIGN
-            img.services-card__image(src="./img/pencil-case.svg" alt="pencil case icon")
-            p.services-card__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-            a.services-card__link(href="#") READ MORE
+              article.services__article.services-card
+                h3.services-card__title DESIGN
+                .services-card__icon-wrapper
+                  img.services-card__icon(src="./img/pencil-case.svg" width="25" height="25" alt="pencil case icon")
+                p.services-card__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                a.services-card__link(href="#") READ MORE
 
-          article.services__article.services-card
-            h3.services-card__title DEVELOPMENT
-            img.services-card__image(src="./img/coding.svg" alt="coding icon")
-            p.services-card__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-            a.services-card__link(href="#") READ MORE
+              article.services__article.services-card
+                h3.services-card__title DEVELOPMENT
+                .services-card__icon-wrapper
+                  img.services-card__icon(src="./img/coding.svg" width="25" height="25" alt="coding icon")
+                p.services-card__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                a.services-card__link(href="#") READ MORE
 
         section.portfolio
           h2.portfolio__title Latest Works
           nav.portfolio__nav
             ul.portfolio__nav-list
-              li.portfolio__nav-item ALL
-              li.portfolio__nav-item WEB DESIGN
-              li.portfolio__nav-item BRANDING
-              li.portfolio__nav-item PHOTOGRAPHY
-              li.portfolio__nav-item ILLUSTRATION
+              li.portfolio__nav-item
+                a.portfolio__link(href="#") ALL
+              li.portfolio__nav-item
+                a.portfolio__link(href="#") WEB DESIGN
+              li.portfolio__nav-item
+                a.portfolio__link(href="#") BRANDING
+              li.portfolio__nav-item
+                a.portfolio__link(href="#") PHOTOGRAPHY
+              li.portfolio__nav-item
+                a.portfolio__link(href="#") ILLUSTRATION
 
           .portfolio__card.portfolio-card
             h3.portfolio-card__title
