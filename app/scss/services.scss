@@ -1,0 +1,21 @@
+.services {
+  margin-bottom: 165px;
+  background-color: #fbfbfb;
+}
+
+.services__content-wrapper {
+  margin: 0 auto;
+  padding: 135px 30px;
+  max-width: 1230px;
+}
+
+.services__title {
+  @include title;
+
+  margin-bottom: 85px;
+}
+
+.services__cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+}

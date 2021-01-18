@@ -1,0 +1,60 @@
+.page-header {
+  margin-bottom: 150px;
+  height: 100vh;
+  color: #fff;
+  background: url("../img/bitmap.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-header__nav {
+  margin: 0 auto 27vh;
+}
+
+.page-header__logo {
+  @include font(700, 36px, 30px, #fff);
+
+  margin: 0;
+  padding: 0 10px;
+}
+
+.page-header__text-wrapper {
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.page-header__slogan {
+  @include font(500, 72px, 107px, #fff);
+
+  margin: 0 auto 40px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.page-header__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.page-header__controls-wrapper {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+}
+
+.page-header__controls-list {
+  @include font(700, 18px, 27px, #fff);
+
+  display: flex;
+  width: 60px;
+  opacity: 0.45;
+}
+
+.page-header__controls-item {
+  padding: 5px;
+}

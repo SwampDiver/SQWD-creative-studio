@@ -1,0 +1,39 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 280px 30px 262px;
+  max-width: 1800px;
+  text-transform: uppercase;
+}
+
+.main-nav__list {
+  @include font(400, 14px, 21px, #fff);
+
+  display: flex;
+  justify-content: end;
+  letter-spacing: 0.2em;
+}
+
+.main-nav__item {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 28px;
+    bottom: -3px;
+    width: 18px;
+    height: 2px;
+    background-color: #4caf50;
+  }
+
+  &:hover::after {
+    left: 28px;
+    width: auto;
+  }
+}
+
+.main-nav__link {
+  padding: 20px 30px;
+}

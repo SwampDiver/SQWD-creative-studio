@@ -1,0 +1,32 @@
+.portfolio {
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1245px;
+}
+
+.portfolio__title {
+  @include title;
+
+  margin-bottom: 80px;
+  padding-top: 60px;
+}
+
+.portfolio__nav-list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 550px;
+  color: #252525;
+}
+
+.portfolio__link {
+  padding: 20px;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:first-child {
+    padding: 20px 20px 20px 0;
+  }
+}
