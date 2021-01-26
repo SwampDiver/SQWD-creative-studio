@@ -1,0 +1,139 @@
+.portfolio-card {
+  position: relative;
+  width: 453px;
+  height: 600px;
+
+  &:hover .portfolio-card__read-more,
+  &:hover .portfolio-card__title-first-line::before,
+  &:hover .portfolio-card__title-second-line::before {
+    display: block;
+  }
+
+  &:nth-child(odd) .portfolio-card__title {
+    position: absolute;
+    left: -105px;
+    top: 260px;
+  }
+
+  &:nth-child(3) {
+    top: 740px;
+  }
+
+  &:nth-child(odd) .portfolio-card__description-wrapper {
+    margin-left: 25px;
+  }
+
+  &:nth-child(odd) .portfolio-card__subtitle {
+    text-align: right;
+  }
+
+  &:nth-child(odd) .portfolio-card__text {
+    text-align: right;
+  }
+}
+
+.portfolio-card__link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.portfolio-card__title {
+  @include font(300, 48px, 71px, #252525);
+
+  position: absolute;
+  left: 390px;
+  top: 270px;
+  margin: 0;
+  min-width: 250px;
+}
+
+.portfolio-card__title-first-line {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 62%;
+    display: none;
+    width: calc(100% + 10px);
+    height: 3px;
+    background-color: #70bf73;
+  }
+}
+
+.portfolio-card__title-second-line {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 53%;
+    display: none;
+    width: calc(100% + 10px);
+    height: 3px;
+    background-color: #70bf73;
+  }
+}
+
+.portfolio-card__image {
+  margin-bottom: 20px;
+  width: 455px;
+  height: 444px;
+}
+
+.portfolio-card__description-wrapper {
+  margin: 0 0 0 auto;
+  width: 270px;
+}
+
+.portfolio-card__subtitle {
+  margin: 0 0 20px;
+  font-weight: 300;
+  font-size: 18px;
+  color: #252525;
+}
+
+.portfolio-card__text {
+  margin: 0 0 20px;
+  font-weight: 300;
+  line-height: 23px;
+  color: #c2c2c2;
+}
+
+.portfolio-card__read-more {
+  position: relative;
+  display: none;
+  margin: 0 auto;
+  padding: 10px;
+  width: 95px;
+  line-height: 18px;
+  color: #252525;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: -3px;
+    top: 50%;
+    width: 51px;
+    height: 3px;
+    background-color: #70bf73;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: 50%;
+    z-index: -1;
+    width: 40px;
+    height: 3px;
+    background-color: #70bf73;
+  }
+}

@@ -1,6 +1,7 @@
 .portfolio {
+  position: relative;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 30px 170px;
   max-width: 1245px;
 }
 
@@ -14,6 +15,7 @@
 .portfolio__nav-list {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 125px;
   max-width: 550px;
   color: #252525;
 }
@@ -28,5 +30,33 @@
 
   &:first-child {
     padding: 20px 20px 20px 0;
+  }
+}
+
+.portfolio__card {
+  margin-bottom: 135px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:nth-child(odd) {
+    position: absolute;
+    left: 760px;
+    top: 0;
+  }
+}
+
+.portfolio__view-more {
+  @include font(400, 13px, 19px, #252525);
+
+  position: absolute;
+  right: 20px;
+  bottom: 200px;
+  padding: 15px;
+  letter-spacing: 2px;
+
+  &:hover {
+    color: #70bf73;
   }
 }

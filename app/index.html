@@ -69,48 +69,62 @@
             <li class="portfolio__nav-item"><a class="portfolio__link" href="#">ILLUSTRATION</a></li>
           </ul>
         </nav>
-        <div class="portfolio__card portfolio-card">
-          <h3 class="portfolio-card__title">100 YEARS<br/>PHOTOGRAPHY</h3><img class="portfolio-card__image" src="./img/camera.jpg" alt="camera"/>
-          <h4 class="portfolio-card__subtitle">Photography</h4>
-          <p class="portfolio-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="portfolio-card__read-more" href="#">READ MORE</a>
-        </div>
-        <div class="portfolio__card portfolio-card">
-          <h3 class="portfolio-card__title">A KITTEN’S<br/>LIFE</h3><img class="portfolio-card__image" src="./img/cat.jpg" alt="cat"/>
-          <h4 class="portfolio-card__subtitle">Photography</h4>
-          <p class="portfolio-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="portfolio-card__read-more" href="#">READ MORE</a>
-        </div>
-        <div class="portfolio__card portfolio-card">
-          <h3 class="portfolio-card__title">GROOVEMADE<br/>PRODUCTS FOR MAC</h3><img class="portfolio-card__image" src="./img/mac.jpg" alt="camera"/>
-          <h4 class="portfolio-card__subtitle">Photography</h4>
-          <p class="portfolio-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="portfolio-card__read-more" href="#">READ MORE</a>
-        </div>
-        <div class="portfolio__card portfolio-card">
-          <h3 class="portfolio-card__title">APPLE’s<br/>LOST MAGIC</h3><img class="portfolio-card__image" src="./img/keybord.jpg" alt="camera"/>
-          <h4 class="portfolio-card__subtitle">Photography</h4>
-          <p class="portfolio-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="portfolio-card__read-more" href="#">READ MORE</a>
+        <div class="portfolio__card-wrapper">
+          <div class="portfolio__card portfolio-card"><a class="portfolio-card__link" href="#"></a>
+            <h3 class="portfolio-card__title"><a class="portfolio-card__title-link" href="#"><span class="portfolio-card__title-first-line">100 YEARS</span><br/><span class="portfolio-card__title-second-line">PHOTOGRAPHY</span></a></h3><img class="portfolio-card__image" src="./img/camera.jpg" alt="camera"/>
+            <div class="portfolio-card__description-wrapper">
+              <h4 class="portfolio-card__subtitle">Photography</h4>
+              <p class="portfolio-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div><a class="portfolio-card__read-more" href="#">READ MORE</a>
+          </div>
+          <div class="portfolio__card portfolio-card"><a class="portfolio-card__link" href="#"></a>
+            <h3 class="portfolio-card__title"><a class="portfolio-card__title-link" href="#"><span class="portfolio-card__title-first-line">A KITTEN’S</span><br/><span class="portfolio-card__title-second-line">LIFE</span></a></h3><img class="portfolio-card__image" src="./img/cat.jpg" alt="cat"/>
+            <div class="portfolio-card__description-wrapper">
+              <h4 class="portfolio-card__subtitle">Photography</h4>
+              <p class="portfolio-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div><a class="portfolio-card__read-more" href="#">READ MORE</a>
+          </div>
+          <div class="portfolio__card portfolio-card"><a class="portfolio-card__link" href="#"></a>
+            <h3 class="portfolio-card__title"><a class="portfolio-card__title-link" href="#"><span class="portfolio-card__title-first-line">GROOVEMADE</span><br/><span class="portfolio-card__title-second-line">PRODUCTS FOR MAC</span></a></h3><img class="portfolio-card__image" src="./img/mac.jpg" alt="camera"/>
+            <div class="portfolio-card__description-wrapper">
+              <h4 class="portfolio-card__subtitle">Photography</h4>
+              <p class="portfolio-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div><a class="portfolio-card__read-more" href="#">READ MORE</a>
+          </div>
+          <div class="portfolio__card portfolio-card"><a class="portfolio-card__link" href="#"></a>
+            <h3 class="portfolio-card__title"><a class="portfolio-card__title-link" href="#"><span class="portfolio-card__title-first-line">APPLE’s</span><br/><span class="portfolio-card__title-second-line">LOST MAGIC</span></a></h3><img class="portfolio-card__image" src="./img/keybord.jpg" alt="camera"/>
+            <div class="portfolio-card__description-wrapper">
+              <h4 class="portfolio-card__subtitle">Photography</h4>
+              <p class="portfolio-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div><a class="portfolio-card__read-more" href="#">READ MORE</a>
+          </div>
         </div><a class="portfolio__view-more" href="#">view more</a>
       </section>
       <section class="team">
-        <h2 class="team__title">The Team</h2>
-        <div class="team__card team-card"><img class="team-card__image" src="./img/Person-1.jpg" alt="photo of Tom Jones"/>
-          <div class="team-card__text-wrapper">
-            <h3 class="team-card__name">Tom Jones</h3>
-            <p class="team-card__position">Designer</p>
-            <p class="team-card__slogan">Create with simplicity in mind!</p>
-          </div>
-        </div>
-        <div class="team__card team-card"><img class="team-card__image" src="./img/Person-2.jpg" alt="photo of Michael Fraup"/>
-          <div class="team-card__text-wrapper">
-            <h3 class="team-card__name">Michael Fraup</h3>
-            <p class="team-card__position">Creative Director</p>
-            <p class="team-card__slogan">Create with simplicity in mind!</p>
-          </div>
-        </div>
-        <div class="team__card team-card"><img class="team-card__image" src="./img/Person-3.jpg" alt="photo of Tim Cahill"/>
-          <div class="team-card__text-wrapper">
-            <h3 class="team-card__name">Tim Cahill</h3>
-            <p class="team-card__position">Developer</p>
-            <p class="team-card__slogan">Create with simplicity in mind!</p>
+        <div class="team__content-wrapper">
+          <h2 class="team__title">The Team</h2>
+          <div class="team__card-wrapper">
+            <div class="team__card team-card"><img class="team-card__image" src="./img/Person-1.jpg" alt="photo of Tom Jones"/>
+              <div class="team-card__text-wrapper">
+                <h3 class="team-card__name">Tom Jones</h3>
+                <p class="team-card__position">Designer</p>
+                <p class="team-card__slogan">Create with simplicity in mind!</p>
+              </div>
+            </div>
+            <div class="team__card team-card"><img class="team-card__image" src="./img/Person-2.jpg" alt="photo of Michael Fraup"/>
+              <div class="team-card__text-wrapper">
+                <h3 class="team-card__name">Michael Fraup</h3>
+                <p class="team-card__position">Creative Director</p>
+                <p class="team-card__slogan">Create with simplicity in mind!</p>
+              </div>
+            </div>
+            <div class="team__card team-card"><img class="team-card__image" src="./img/Person-3.jpg" alt="photo of Tim Cahill"/>
+              <div class="team-card__text-wrapper">
+                <h3 class="team-card__name">Tim Cahill</h3>
+                <p class="team-card__position">Developer</p>
+                <p class="team-card__slogan">Create with simplicity in mind!</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

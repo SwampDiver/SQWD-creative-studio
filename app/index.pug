@@ -78,71 +78,85 @@ html(lang="en")
                 a.portfolio__link(href="#") PHOTOGRAPHY
               li.portfolio__nav-item
                 a.portfolio__link(href="#") ILLUSTRATION
+          .portfolio__card-wrapper
+            .portfolio__card.portfolio-card
+              a.portfolio-card__link(href="#")
+              h3.portfolio-card__title
+                a.portfolio-card__title-link(href="#")
+                  span.portfolio-card__title-first-line 100 YEARS
+                  br
+                  span.portfolio-card__title-second-line PHOTOGRAPHY
+              img.portfolio-card__image(src="./img/camera.jpg" alt="camera")
+              .portfolio-card__description-wrapper
+                h4.portfolio-card__subtitle Photography
+                p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              a.portfolio-card__read-more(href="#") READ MORE
 
-          .portfolio__card.portfolio-card
-            h3.portfolio-card__title
-              |100 YEARS
-              br
-              |PHOTOGRAPHY
-            img.portfolio-card__image(src="./img/camera.jpg" alt="camera")
-            h4.portfolio-card__subtitle Photography
-            p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            a.portfolio-card__read-more(href="#") READ MORE
+            .portfolio__card.portfolio-card
+              a.portfolio-card__link(href="#")
+              h3.portfolio-card__title
+                a.portfolio-card__title-link(href="#")
+                  span.portfolio-card__title-first-line A KITTEN’S
+                  br
+                  span.portfolio-card__title-second-line LIFE
+              img.portfolio-card__image(src="./img/cat.jpg" alt="cat")
+              .portfolio-card__description-wrapper
+                h4.portfolio-card__subtitle Photography
+                p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              a.portfolio-card__read-more(href="#") READ MORE
 
-          .portfolio__card.portfolio-card
-            h3.portfolio-card__title
-              |A KITTEN’S
-              br
-              |LIFE
-            img.portfolio-card__image(src="./img/cat.jpg" alt="cat")
-            h4.portfolio-card__subtitle Photography
-            p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            a.portfolio-card__read-more(href="#") READ MORE
+            .portfolio__card.portfolio-card
+              a.portfolio-card__link(href="#")
+              h3.portfolio-card__title
+                a.portfolio-card__title-link(href="#")
+                  span.portfolio-card__title-first-line GROOVEMADE
+                  br
+                  span.portfolio-card__title-second-line PRODUCTS FOR MAC
+              img.portfolio-card__image(src="./img/mac.jpg" alt="camera")
+              .portfolio-card__description-wrapper
+                h4.portfolio-card__subtitle Photography
+                p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              a.portfolio-card__read-more(href="#") READ MORE
 
-          .portfolio__card.portfolio-card
-            h3.portfolio-card__title
-              |GROOVEMADE
-              br
-              |PRODUCTS FOR MAC
-            img.portfolio-card__image(src="./img/mac.jpg" alt="camera")
-            h4.portfolio-card__subtitle Photography
-            p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            a.portfolio-card__read-more(href="#") READ MORE
-
-          .portfolio__card.portfolio-card
-            h3.portfolio-card__title
-              |APPLE’s
-              br
-              |LOST MAGIC
-            img.portfolio-card__image(src="./img/keybord.jpg" alt="camera")
-            h4.portfolio-card__subtitle Photography
-            p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            a.portfolio-card__read-more(href="#") READ MORE
+            .portfolio__card.portfolio-card
+              a.portfolio-card__link(href="#")
+              h3.portfolio-card__title
+                a.portfolio-card__title-link(href="#")
+                  span.portfolio-card__title-first-line APPLE’s
+                  br
+                  span.portfolio-card__title-second-line LOST MAGIC
+              img.portfolio-card__image(src="./img/keybord.jpg" alt="camera")
+              .portfolio-card__description-wrapper
+                h4.portfolio-card__subtitle Photography
+                p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              a.portfolio-card__read-more(href="#") READ MORE
 
           a.portfolio__view-more(href="#") view more
 
         section.team
-          h2.team__title The Team
-          .team__card.team-card
-            img.team-card__image(src="./img/Person-1.jpg" alt="photo of Tom Jones")
-            .team-card__text-wrapper
-              h3.team-card__name Tom Jones
-              p.team-card__position Designer
-              p.team-card__slogan Create with simplicity in mind!
+          .team__content-wrapper
+            h2.team__title The Team
+            .team__card-wrapper
+              .team__card.team-card
+                img.team-card__image(src="./img/Person-1.jpg" alt="photo of Tom Jones")
+                .team-card__text-wrapper
+                  h3.team-card__name Tom Jones
+                  p.team-card__position Designer
+                  p.team-card__slogan Create with simplicity in mind!
 
-          .team__card.team-card
-            img.team-card__image(src="./img/Person-2.jpg" alt="photo of Michael Fraup")
-            .team-card__text-wrapper
-              h3.team-card__name Michael Fraup
-              p.team-card__position Creative Director
-              p.team-card__slogan Create with simplicity in mind!
+              .team__card.team-card
+                img.team-card__image(src="./img/Person-2.jpg" alt="photo of Michael Fraup")
+                .team-card__text-wrapper
+                  h3.team-card__name Michael Fraup
+                  p.team-card__position Creative Director
+                  p.team-card__slogan Create with simplicity in mind!
 
-          .team__card.team-card
-            img.team-card__image(src="./img/Person-3.jpg" alt="photo of Tim Cahill")
-            .team-card__text-wrapper
-              h3.team-card__name Tim Cahill
-              p.team-card__position Developer
-              p.team-card__slogan Create with simplicity in mind!
+              .team__card.team-card
+                img.team-card__image(src="./img/Person-3.jpg" alt="photo of Tim Cahill")
+                .team-card__text-wrapper
+                  h3.team-card__name Tim Cahill
+                  p.team-card__position Developer
+                  p.team-card__slogan Create with simplicity in mind!
 
         section.reviews
           h2.visually-hidden Reviews
