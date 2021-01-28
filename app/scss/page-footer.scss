@@ -1,0 +1,23 @@
+.page-footer {
+  @include font(300, 13px, 19px, #fff);
+
+  background-color: #2e2e2e;
+}
+
+.page-footer__adress {
+  margin: 0;
+  padding: 140px 0 40px;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.page-footer__socials {
+  margin-bottom: 80px;
+}
+
+.page-footer__copyright {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #252525;
+  opacity: 0.5;
+}

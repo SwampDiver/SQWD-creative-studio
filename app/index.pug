@@ -26,9 +26,12 @@ html(lang="en")
           h2.page-header__title Passionate creative studio helping startups grow their business!
         .page-header__controls-wrapper
           ul.page-header__controls-list
-            li.page-header__controls-item.page-header__controls-item--active 01
-            li.page-header__controls-item 02
-            li.page-header__controls-item 03
+            li.page-header__controls-item
+              button.page-header__controls-button.page-header__controls-button--active(type="button" aria-label="Первый слайд") 01
+            li.page-header__controls-item
+              button.page-header__controls-button(type="button" aria-label="Второй слайд") 02
+            li.page-header__controls-item
+              button.page-header__controls-button(type="button" aria-label="Третий слайд") 03
       main
         section.about-us
           h2.about-us__title
@@ -164,32 +167,32 @@ html(lang="en")
             p.reviews__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             p.reviews__author
               b.reviews__author-name DAVID JAMES
-              | / Web Design
+              |  / Web Design
 
           .rewievs__rating.star-rating
-            span.star-rating.star-rating--active
-            span.star-rating.star-rating--active
-            span.star-rating.star-rating--active
-            span.star-rating.star-rating--active
-            span.star-rating
+            div.star-rating__item.star-rating__item--active
+            div.star-rating__item.star-rating__item--active
+            div.star-rating__item.star-rating__item--active
+            div.star-rating__item.star-rating__item--active
+            div.star-rating__item
 
           .reviews__navigation
             button.reviews__button.reviews__button--back(type="button" aria-label="Предыдущий отзыв")
             button.reviews__button.reviews__button--forward(type="button" aria-label="Следующий отзыв")
 
-          section.contacts
-            h2.visually-hidden Contacts
-            .contacts__first-block
-              a.contacts__link(href="#")
-                span.contacts__title Want to work together?
-                br
-                span.contacts__text Amazing. Tell us about your project!
+        section.contacts
+          h2.visually-hidden Contacts
+          .contacts__block.contacts__block--first
+            .contacts__block-link
+            .contacts__content-wrapper
+              h3.contacts__title.contacts__title--first Want to work together?
+              p.contacts__text Amazing. Tell us about your project!
 
-            .contacts__second-block
-              a.contacts__link(href="#")
-                span.contacts__title Contact us
-                br
-                span.contacts__text Get in touch
+          .contacts__block.contacts__block--second
+            .contacts__block-link
+            .contacts__content-wrapper
+              h3.contacts__title.contacts__title--second Contact us
+              p.contacts__text Get in touch
 
         footer.page-footer
           p.page-footer__adress 3rd Floor, Santa Monica Beach, CA, San Francisco
@@ -198,12 +201,13 @@ html(lang="en")
           .page-footer__socials.socials
             ul.socials__list
               li.socials__item
-                a.socials__link(href="#")
+                a.socials__link.socials__link--fb(href="#")
               li.socials__item
-                a.socials__link(href="#")
+                a.socials__link.socials__link--twitter(href="#")
               li.socials__item
-                a.socials__link(href="#")
-
+                a.socials__link.socials__link--pinterest(href="#")
+          p.page-footer__copyright Copyright 2016 - All Rights Reserved - Designed by JD
+      script(src = "./js/main.min.js")
 
 
 

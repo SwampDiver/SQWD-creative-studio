@@ -1,2 +1,4 @@
-// import '../index.html';
-import '../scss/style.scss';
+// import '../scss/style.scss';
+'use strict';
+
+

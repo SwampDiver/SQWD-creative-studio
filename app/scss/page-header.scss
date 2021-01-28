@@ -9,7 +9,7 @@
 }
 
 .page-header__nav {
-  margin: 0 auto 27vh;
+  margin: 0 auto 20vh;
 }
 
 .page-header__logo {
@@ -27,7 +27,7 @@
 .page-header__slogan {
   @include font(500, 72px, 107px, #fff);
 
-  margin: 0 auto 40px;
+  margin: 0 auto 4vh;
   letter-spacing: 0.1em;
   text-align: center;
 }
@@ -51,10 +51,51 @@
   @include font(700, 18px, 27px, #fff);
 
   display: flex;
-  width: 60px;
-  opacity: 0.45;
+  align-items: baseline;
+  justify-content: center;
+  width: 110px;
 }
 
 .page-header__controls-item {
   padding: 5px;
+}
+
+.page-header__controls-button {
+  display: block;
+  border: none;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.45);
+  background: transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &--active {
+    @include font(700, 36px, 53px, #fff);
+
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: -3px;
+      top: 50%;
+      z-index: -1;
+      width: 40px;
+      height: 2px;
+      background-color: #70bf73;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -3px;
+      top: 50%;
+      width: 13px;
+      height: 2px;
+      background-color: #70bf73;
+    }
+  }
 }

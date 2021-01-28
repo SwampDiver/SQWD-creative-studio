@@ -24,9 +24,15 @@
       </div>
       <div class="page-header__controls-wrapper">
         <ul class="page-header__controls-list">
-          <li class="page-header__controls-item page-header__controls-item--active">01</li>
-          <li class="page-header__controls-item">02</li>
-          <li class="page-header__controls-item">03</li>
+          <li class="page-header__controls-item">
+            <button class="page-header__controls-button page-header__controls-button--active" type="button" aria-label="Первый слайд">01</button>
+          </li>
+          <li class="page-header__controls-item">
+            <button class="page-header__controls-button" type="button" aria-label="Второй слайд">02</button>
+          </li>
+          <li class="page-header__controls-item">
+            <button class="page-header__controls-button" type="button" aria-label="Третий слайд">03</button>
+          </li>
         </ul>
       </div>
     </header>
@@ -132,29 +138,49 @@
         <h2 class="visually-hidden">Reviews</h2>
         <blockquote class="reviews__blockquote">
           <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p class="reviews__author"><b class="reviews__author-name">DAVID JAMES</b>/ Web Design</p>
+          <p class="reviews__author"><b class="reviews__author-name">DAVID JAMES</b> / Web Design</p>
         </blockquote>
-        <div class="rewievs__rating star-rating"><span class="star-rating star-rating--active"></span><span class="star-rating star-rating--active"></span><span class="star-rating star-rating--active"></span><span class="star-rating star-rating--active"></span><span class="star-rating"></span></div>
+        <div class="rewievs__rating star-rating">
+          <div class="star-rating__item star-rating__item--active"></div>
+          <div class="star-rating__item star-rating__item--active"></div>
+          <div class="star-rating__item star-rating__item--active"></div>
+          <div class="star-rating__item star-rating__item--active"></div>
+          <div class="star-rating__item"></div>
+        </div>
         <div class="reviews__navigation">
           <button class="reviews__button reviews__button--back" type="button" aria-label="Предыдущий отзыв"></button>
           <button class="reviews__button reviews__button--forward" type="button" aria-label="Следующий отзыв"></button>
         </div>
-        <section class="contacts">
-          <h2 class="visually-hidden">Contacts</h2>
-          <div class="contacts__first-block"><a class="contacts__link" href="#"><span class="contacts__title">Want to work together?</span><br/><span class="contacts__text">Amazing. Tell us about your project!</span></a></div>
-          <div class="contacts__second-block"><a class="contacts__link" href="#"><span class="contacts__title">Contact us</span><br/><span class="contacts__text">Get in touch</span></a></div>
-        </section>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Contacts</h2>
+        <div class="contacts__block contacts__block--first">
+          <div class="contacts__block-link"></div>
+          <div class="contacts__content-wrapper">
+            <h3 class="contacts__title contacts__title--first">Want to work together?</h3>
+            <p class="contacts__text">Amazing. Tell us about your project!</p>
+          </div>
+        </div>
+        <div class="contacts__block contacts__block--second">
+          <div class="contacts__block-link"></div>
+          <div class="contacts__content-wrapper">
+            <h3 class="contacts__title contacts__title--second">Contact us</h3>
+            <p class="contacts__text">Get in touch</p>
+          </div>
+        </div>
       </section>
       <footer class="page-footer">
         <p class="page-footer__adress">3rd Floor, Santa Monica Beach, CA, San Francisco<br/>(359) 0 123 456 789 - info@yourmail.com</p>
         <div class="page-footer__socials socials">
           <ul class="socials__list">
-            <li class="socials__item"><a class="socials__link" href="#"></a></li>
-            <li class="socials__item"><a class="socials__link" href="#"></a></li>
-            <li class="socials__item"><a class="socials__link" href="#"></a></li>
+            <li class="socials__item"><a class="socials__link socials__link--fb" href="#"></a></li>
+            <li class="socials__item"><a class="socials__link socials__link--twitter" href="#"></a></li>
+            <li class="socials__item"><a class="socials__link socials__link--pinterest" href="#"></a></li>
           </ul>
         </div>
+        <p class="page-footer__copyright">Copyright 2016 - All Rights Reserved - Designed by JD</p>
       </footer>
     </main>
+    <script src="./js/main.min.js"></script>
   </body>
 </html>

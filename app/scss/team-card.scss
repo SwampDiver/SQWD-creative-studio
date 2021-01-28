@@ -5,8 +5,8 @@
   height: 398px;
 
   &:hover .team-card__text-wrapper {
-    animation-name: appearance;
-    animation-duration: 1s;
+    bottom: 0;
+    animation: appearance 1s;
 
     @keyframes appearance {
       from {
