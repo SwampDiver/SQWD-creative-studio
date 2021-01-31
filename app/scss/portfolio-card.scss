@@ -8,28 +8,6 @@
   &:hover .portfolio-card__title-second-line::before {
     display: block;
   }
-
-  &:nth-child(odd) .portfolio-card__title {
-    position: absolute;
-    left: -105px;
-    top: 260px;
-  }
-
-  &:nth-child(3) {
-    top: 740px;
-  }
-
-  &:nth-child(odd) .portfolio-card__description-wrapper {
-    margin-left: 25px;
-  }
-
-  &:nth-child(odd) .portfolio-card__subtitle {
-    text-align: right;
-  }
-
-  &:nth-child(odd) .portfolio-card__text {
-    text-align: right;
-  }
 }
 
 .portfolio-card__link {

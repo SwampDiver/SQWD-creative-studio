@@ -9,7 +9,6 @@
   @include title;
 
   margin-bottom: 80px;
-  padding-top: 60px;
 }
 
 .portfolio__nav-list {
@@ -33,17 +32,31 @@
   }
 }
 
-.portfolio__card {
-  margin-bottom: 135px;
+.portfolio__card-wrapper {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-gap: 140px 300px;
+  grid-template-columns: 1fr 1fr;
+}
 
-  &:last-child {
-    margin-bottom: 0;
+.portfolio__card {
+  &:nth-child(even) .portfolio-card__title {
+    position: absolute;
+    left: -105px;
+    top: 260px;
   }
 
-  &:nth-child(odd) {
-    position: absolute;
-    left: 760px;
-    top: 0;
+  &:nth-child(even) {
+    margin-top: -370px;
+  }
+
+  &:nth-child(even) .portfolio-card__description-wrapper {
+    margin-left: 25px;
+  }
+
+  &:nth-child(even) .portfolio-card__subtitle,
+  &:nth-child(even) .portfolio-card__text {
+    text-align: right;
   }
 }
 
