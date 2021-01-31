@@ -1,7 +1,6 @@
 .contacts {
   display: flex;
   margin: 0 auto;
-  max-width: 1800px;
 }
 
 .contacts__block {
@@ -19,6 +18,10 @@
     background-position: center;
     background-repeat: no-repeat;
     transform: translateX(-50%);
+
+    @include _1300 {
+      top: 60px;
+    }
   }
 
   &:hover .contacts__title,
@@ -34,6 +37,10 @@
   &--second::after {
     top: 95px;
     background-image: url("../img/mail.svg");
+
+    @include _1300 {
+      top: 60px;
+    }
   }
 
   &--second {
@@ -66,6 +73,10 @@
     width: 35px;
     height: 35px;
     transform: translateX(-50%);
+  }
+
+  @include _1300 {
+    padding: 90px 0 80px;
   }
 }
 

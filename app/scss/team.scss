@@ -7,6 +7,10 @@
   margin: 0 auto;
   padding: 135px 30px 70px;
   max-width: 1245px;
+
+  @include _1300 {
+    padding-top: 80px;
+  }
 }
 
 .team__title {

@@ -18,22 +18,22 @@
           <li class="main-nav__item"><a class="main-nav__link" href="#">Contact</a></li>
         </ul>
       </nav>
-      <div class="page-header__text-wrapper">
+      <div class="page-header__content-wrapper">
         <p class="page-header__slogan">WHERE GREAT IDEAS COME TO LIFE</p>
         <h2 class="page-header__title">Passionate creative studio helping startups grow their business!</h2>
-      </div>
-      <div class="page-header__controls-wrapper">
-        <ul class="page-header__controls-list">
-          <li class="page-header__controls-item">
-            <button class="page-header__controls-button page-header__controls-button--active" type="button" aria-label="Первый слайд">01</button>
-          </li>
-          <li class="page-header__controls-item">
-            <button class="page-header__controls-button" type="button" aria-label="Второй слайд">02</button>
-          </li>
-          <li class="page-header__controls-item">
-            <button class="page-header__controls-button" type="button" aria-label="Третий слайд">03</button>
-          </li>
-        </ul>
+        <div class="page-header__controls-wrapper">
+          <ul class="page-header__controls-list">
+            <li class="page-header__controls-item">
+              <button class="page-header__controls-button page-header__controls-button--active" type="button" aria-label="Первый слайд">01</button>
+            </li>
+            <li class="page-header__controls-item">
+              <button class="page-header__controls-button" type="button" aria-label="Второй слайд">02</button>
+            </li>
+            <li class="page-header__controls-item">
+              <button class="page-header__controls-button" type="button" aria-label="Третий слайд">03</button>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -44,7 +44,9 @@
       </section>
       <section class="services">
         <div class="services__content-wrapper">
-          <h2 class="services__title">Our Services</h2>
+          <div class="services__title-wrapper title-wrapper">
+            <h2 class="services__title">Our Services</h2>
+          </div>
           <div class="services__cards-wrapper">
             <article class="services__article services-card">
               <h3 class="services-card__title">BRANDING</h3>
@@ -65,7 +67,9 @@
         </div>
       </section>
       <section class="portfolio">
-        <h2 class="portfolio__title">Latest Works</h2>
+        <div class="portfolio__title-wrapper title-wrapper">
+          <h2 class="portfolio__title">Latest Works</h2>
+        </div>
         <nav class="portfolio__nav">
           <ul class="portfolio__nav-list">
             <li class="portfolio__nav-item"><a class="portfolio__link" href="#">ALL</a></li>
@@ -77,13 +81,6 @@
         </nav>
         <div class="portfolio__card-wrapper">
           <div class="portfolio__card portfolio-card"><a class="portfolio-card__link" href="#"></a>
-            <h3 class="portfolio-card__title"><a class="portfolio-card__title-link" href="#"><span class="portfolio-card__title-first-line">100 YEARS</span><br/><span class="portfolio-card__title-second-line">PHOTOGRAPHY</span></a></h3><img class="portfolio-card__image" src="./img/camera.jpg" alt="camera"/>
-            <div class="portfolio-card__description-wrapper">
-              <h4 class="portfolio-card__subtitle">Photography</h4>
-              <p class="portfolio-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div><a class="portfolio-card__read-more" href="#">READ MORE</a>
-          </div>
-          <div class="portfolio__card portfolio-card"><a class="portfolio-card__link" href="#"></a>
             <h3 class="portfolio-card__title"><a class="portfolio-card__title-link" href="#"><span class="portfolio-card__title-first-line">A KITTEN’S</span><br/><span class="portfolio-card__title-second-line">LIFE</span></a></h3><img class="portfolio-card__image" src="./img/cat.jpg" alt="cat"/>
             <div class="portfolio-card__description-wrapper">
               <h4 class="portfolio-card__subtitle">Photography</h4>
@@ -91,7 +88,7 @@
             </div><a class="portfolio-card__read-more" href="#">READ MORE</a>
           </div>
           <div class="portfolio__card portfolio-card"><a class="portfolio-card__link" href="#"></a>
-            <h3 class="portfolio-card__title"><a class="portfolio-card__title-link" href="#"><span class="portfolio-card__title-first-line">GROOVEMADE</span><br/><span class="portfolio-card__title-second-line">PRODUCTS FOR MAC</span></a></h3><img class="portfolio-card__image" src="./img/mac.jpg" alt="camera"/>
+            <h3 class="portfolio-card__title"><a class="portfolio-card__title-link" href="#"><span class="portfolio-card__title-first-line">100 YEARS</span><br/><span class="portfolio-card__title-second-line">PHOTOGRAPHY</span></a></h3><img class="portfolio-card__image" src="./img/camera.jpg" alt="camera"/>
             <div class="portfolio-card__description-wrapper">
               <h4 class="portfolio-card__subtitle">Photography</h4>
               <p class="portfolio-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -104,11 +101,20 @@
               <p class="portfolio-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div><a class="portfolio-card__read-more" href="#">READ MORE</a>
           </div>
+          <div class="portfolio__card portfolio-card"><a class="portfolio-card__link" href="#"></a>
+            <h3 class="portfolio-card__title"><a class="portfolio-card__title-link" href="#"><span class="portfolio-card__title-first-line">GROOVEMADE</span><br/><span class="portfolio-card__title-second-line">PRODUCTS FOR MAC</span></a></h3><img class="portfolio-card__image" src="./img/mac.jpg" alt="camera"/>
+            <div class="portfolio-card__description-wrapper">
+              <h4 class="portfolio-card__subtitle">Photography</h4>
+              <p class="portfolio-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div><a class="portfolio-card__read-more" href="#">READ MORE</a>
+          </div>
         </div><a class="portfolio__view-more" href="#">view more</a>
       </section>
       <section class="team">
         <div class="team__content-wrapper">
-          <h2 class="team__title">The Team</h2>
+          <div class="team__title-wrapper title-wrapper">
+            <h2 class="team__title">The Team</h2>
+          </div>
           <div class="team__card-wrapper">
             <div class="team__card team-card"><img class="team-card__image" src="./img/Person-1.jpg" alt="photo of Tom Jones"/>
               <div class="team-card__text-wrapper">

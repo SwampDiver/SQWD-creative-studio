@@ -10,6 +10,10 @@
 
 .page-header__nav {
   margin: 0 auto 20vh;
+
+  @include height480 {
+    margin-bottom: 10vh;
+  }
 }
 
 .page-header__logo {
@@ -19,9 +23,17 @@
   padding: 0 10px;
 }
 
-.page-header__text-wrapper {
+.page-header__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
   padding: 0 30px;
+  height: 65vh;
+
+  @include _1300 {
+    width: 900px;
+  }
 }
 
 .page-header__slogan {
@@ -30,9 +42,14 @@
   margin: 0 auto 4vh;
   letter-spacing: 0.1em;
   text-align: center;
+
+  @include height480 {
+    font-size: 48px;
+  }
 }
 
 .page-header__title {
+  flex-grow: 1;
   margin: 0;
   font-weight: 500;
   font-size: 20px;
@@ -41,10 +58,7 @@
 }
 
 .page-header__controls-wrapper {
-  position: absolute;
-  left: 50%;
-  bottom: 15px;
-  transform: translateX(-50%);
+  flex-grow: 0;
 }
 
 .page-header__controls-list {
@@ -76,6 +90,7 @@
     @include font(700, 36px, 53px, #fff);
 
     position: relative;
+    z-index: 0;
 
     &::before {
       content: "";
@@ -93,6 +108,7 @@
       position: absolute;
       left: -3px;
       top: 50%;
+      z-index: 1;
       width: 13px;
       height: 2px;
       background-color: #70bf73;

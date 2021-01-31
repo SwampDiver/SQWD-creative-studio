@@ -14,7 +14,7 @@
   @include font(700, 48px, 71px, #252525);
 
   position: relative;
-  margin: 0;
+  margin: 0 auto;
 
   &::after {
     content: "";
@@ -43,5 +43,19 @@
     width: 35px;
     height: 2px;
     background-color: #252525;
+  }
+}
+
+// media
+
+@mixin _1300 {
+  @media (max-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin height480 {
+  @media (max-height: 480px) {
+    @content;
   }
 }

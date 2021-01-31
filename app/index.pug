@@ -21,17 +21,17 @@ html(lang="en")
             li.main-nav__item
               a.main-nav__link(href="#") Contact
 
-        .page-header__text-wrapper
+        .page-header__content-wrapper
           p.page-header__slogan WHERE GREAT IDEAS COME TO LIFE
           h2.page-header__title Passionate creative studio helping startups grow their business!
-        .page-header__controls-wrapper
-          ul.page-header__controls-list
-            li.page-header__controls-item
-              button.page-header__controls-button.page-header__controls-button--active(type="button" aria-label="Первый слайд") 01
-            li.page-header__controls-item
-              button.page-header__controls-button(type="button" aria-label="Второй слайд") 02
-            li.page-header__controls-item
-              button.page-header__controls-button(type="button" aria-label="Третий слайд") 03
+          .page-header__controls-wrapper
+            ul.page-header__controls-list
+              li.page-header__controls-item
+                button.page-header__controls-button.page-header__controls-button--active(type="button" aria-label="Первый слайд") 01
+              li.page-header__controls-item
+                button.page-header__controls-button(type="button" aria-label="Второй слайд") 02
+              li.page-header__controls-item
+                button.page-header__controls-button(type="button" aria-label="Третий слайд") 03
       main
         section.about-us
           h2.about-us__title
@@ -43,7 +43,8 @@ html(lang="en")
 
         section.services
           .services__content-wrapper
-            h2.services__title Our Services
+            .services__title-wrapper.title-wrapper
+              h2.services__title Our Services
 
             .services__cards-wrapper
               article.services__article.services-card
@@ -68,7 +69,8 @@ html(lang="en")
                 a.services-card__link(href="#") READ MORE
 
         section.portfolio
-          h2.portfolio__title Latest Works
+          .portfolio__title-wrapper.title-wrapper
+            h2.portfolio__title Latest Works
           nav.portfolio__nav
             ul.portfolio__nav-list
               li.portfolio__nav-item
@@ -81,19 +83,8 @@ html(lang="en")
                 a.portfolio__link(href="#") PHOTOGRAPHY
               li.portfolio__nav-item
                 a.portfolio__link(href="#") ILLUSTRATION
+
           .portfolio__card-wrapper
-            .portfolio__card.portfolio-card
-              a.portfolio-card__link(href="#")
-              h3.portfolio-card__title
-                a.portfolio-card__title-link(href="#")
-                  span.portfolio-card__title-first-line 100 YEARS
-                  br
-                  span.portfolio-card__title-second-line PHOTOGRAPHY
-              img.portfolio-card__image(src="./img/camera.jpg" alt="camera")
-              .portfolio-card__description-wrapper
-                h4.portfolio-card__subtitle Photography
-                p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              a.portfolio-card__read-more(href="#") READ MORE
 
             .portfolio__card.portfolio-card
               a.portfolio-card__link(href="#")
@@ -112,10 +103,10 @@ html(lang="en")
               a.portfolio-card__link(href="#")
               h3.portfolio-card__title
                 a.portfolio-card__title-link(href="#")
-                  span.portfolio-card__title-first-line GROOVEMADE
+                  span.portfolio-card__title-first-line 100 YEARS
                   br
-                  span.portfolio-card__title-second-line PRODUCTS FOR MAC
-              img.portfolio-card__image(src="./img/mac.jpg" alt="camera")
+                  span.portfolio-card__title-second-line PHOTOGRAPHY
+              img.portfolio-card__image(src="./img/camera.jpg" alt="camera")
               .portfolio-card__description-wrapper
                 h4.portfolio-card__subtitle Photography
                 p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -134,11 +125,25 @@ html(lang="en")
                 p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               a.portfolio-card__read-more(href="#") READ MORE
 
+            .portfolio__card.portfolio-card
+              a.portfolio-card__link(href="#")
+              h3.portfolio-card__title
+                a.portfolio-card__title-link(href="#")
+                  span.portfolio-card__title-first-line GROOVEMADE
+                  br
+                  span.portfolio-card__title-second-line PRODUCTS FOR MAC
+              img.portfolio-card__image(src="./img/mac.jpg" alt="camera")
+              .portfolio-card__description-wrapper
+                h4.portfolio-card__subtitle Photography
+                p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              a.portfolio-card__read-more(href="#") READ MORE
+
           a.portfolio__view-more(href="#") view more
 
         section.team
           .team__content-wrapper
-            h2.team__title The Team
+            .team__title-wrapper.title-wrapper
+              h2.team__title The Team
             .team__card-wrapper
               .team__card.team-card
                 img.team-card__image(src="./img/Person-1.jpg" alt="photo of Tom Jones")
