@@ -24,4 +24,14 @@
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1245px;
+
+  @include _1300 {
+    justify-content: center;
+  }
+}
+
+.team__card {
+  @include _1300 {
+    margin: 0 10px;
+  }
 }

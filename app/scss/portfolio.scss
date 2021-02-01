@@ -13,6 +13,10 @@
   @include title;
 
   margin-bottom: 80px;
+
+  @include _1100 {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio__nav {
@@ -21,6 +25,10 @@
   @include _1300 {
     margin: 0 auto 125px;
     width: 550px;
+  }
+
+  @include _1100 {
+    margin: 0 auto 60px;
   }
 }
 
@@ -50,13 +58,19 @@
 
 .portfolio__card-wrapper {
   display: grid;
-  justify-items: center;
-  grid-gap: 140px 300px;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto 50px;
+  gap: 140px 280px;
 
   @include _1300 {
-    grid-gap: 90px 100px;
+    gap: 90px 100px;
+  }
+
+  @include _1100 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px 0;
   }
 }
 

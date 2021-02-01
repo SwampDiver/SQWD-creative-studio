@@ -5,6 +5,10 @@
   @include _1300 {
     margin-bottom: 100px;
   }
+
+  @include _1100 {
+    margin-bottom: 60px;
+  }
 }
 
 .services__content-wrapper {
