@@ -93,7 +93,9 @@ html(lang="en")
                   span.portfolio-card__title-first-line A KITTEN’S
                   br
                   span.portfolio-card__title-second-line LIFE
-              img.portfolio-card__image(src="./img/cat.jpg" alt="cat")
+              picture
+                source(media="(max-width: 1100px)" srcset="img/cat-0.75.jpg")
+                img.portfolio-card__image(src="img/cat.jpg" alt="cat")
               .portfolio-card__description-wrapper
                 h4.portfolio-card__subtitle Photography
                 p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -106,7 +108,9 @@ html(lang="en")
                   span.portfolio-card__title-first-line 100 YEARS
                   br
                   span.portfolio-card__title-second-line PHOTOGRAPHY
-              img.portfolio-card__image(src="./img/camera.jpg" alt="camera")
+              picture
+                source(media="(max-width: 1100px)" srcset="img/camera-0.75.jpg")
+                img.portfolio-card__image(src="img/camera.jpg" alt="camera")
               .portfolio-card__description-wrapper
                 h4.portfolio-card__subtitle Photography
                 p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -119,7 +123,9 @@ html(lang="en")
                   span.portfolio-card__title-first-line APPLE’s
                   br
                   span.portfolio-card__title-second-line LOST MAGIC
-              img.portfolio-card__image(src="./img/keybord.jpg" alt="camera")
+              picture
+                source(media="(max-width: 1100px)" srcset="img/mac-0.75.jpg")
+                img.portfolio-card__image(src="img/mac.jpg" alt="workplace")
               .portfolio-card__description-wrapper
                 h4.portfolio-card__subtitle Photography
                 p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -132,7 +138,9 @@ html(lang="en")
                   span.portfolio-card__title-first-line GROOVEMADE
                   br
                   span.portfolio-card__title-second-line PRODUCTS FOR MAC
-              img.portfolio-card__image(src="./img/mac.jpg" alt="camera")
+              picture
+                source(media="(max-width: 1100px)" srcset="img/laptop-0.75.jpg")
+                img.portfolio-card__image(src="img/laptop.jpg" alt="laptop")
               .portfolio-card__description-wrapper
                 h4.portfolio-card__subtitle Photography
                 p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -146,21 +154,27 @@ html(lang="en")
               h2.team__title The Team
             .team__card-wrapper
               .team__card.team-card
-                img.team-card__image(src="./img/Person-1.jpg" alt="photo of Tom Jones")
+                picture
+                  source(media="(max-width: 1300px)" srcset="img/person1-0.75.jpg")
+                  img.team-card__image(src="img/person1.jpg" alt="photo of Tom Jones")
                 .team-card__text-wrapper
                   h3.team-card__name Tom Jones
                   p.team-card__position Designer
                   p.team-card__slogan Create with simplicity in mind!
 
               .team__card.team-card
-                img.team-card__image(src="./img/Person-2.jpg" alt="photo of Michael Fraup")
+                picture
+                  source(media="(max-width: 1300px)" srcset="img/person2-0.75.jpg")
+                  img.team-card__image(src="img/person2.jpg" alt="photo of Michael Fraup")
                 .team-card__text-wrapper
                   h3.team-card__name Michael Fraup
                   p.team-card__position Creative Director
                   p.team-card__slogan Create with simplicity in mind!
 
               .team__card.team-card
-                img.team-card__image(src="./img/Person-3.jpg" alt="photo of Tim Cahill")
+                picture
+                  source(media="(max-width: 1300px)" srcset="img/person3-0.75.jpg")
+                  img.team-card__image(src="img/person3.jpg" alt="photo of Tim Cahill")
                 .team-card__text-wrapper
                   h3.team-card__name Tim Cahill
                   p.team-card__position Developer
