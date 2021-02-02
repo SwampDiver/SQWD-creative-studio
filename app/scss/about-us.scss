@@ -4,9 +4,19 @@
   margin: 0 auto 110px;
   padding: 0 30px;
   max-width: 1245px;
-  background: url("../img/triple-img.png");
-  background-position: 40% center;
+  background-image: url("../img/triple-img.png");
+  background-position: center;
   background-repeat: no-repeat;
+
+  @include _1100 {
+    margin-bottom: 80px;
+    background-image: url("../img/triple-img-0.75.png");
+  }
+
+  @include _900 {
+    margin-bottom: 60px;
+    padding: 0 50px;
+  }
 }
 
 .about-us__title {

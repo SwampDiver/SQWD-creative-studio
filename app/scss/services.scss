@@ -19,6 +19,10 @@
   @include _1300 {
     padding-top: 90px;
   }
+
+  @include _900 {
+    padding: 60px 30px;
+  }
 }
 
 .services__title {
@@ -30,4 +34,8 @@
 .services__cards-wrapper {
   display: flex;
   justify-content: space-between;
+
+  @include _900 {
+    flex-wrap: wrap;
+  }
 }

@@ -1,6 +1,10 @@
 .team {
   margin-bottom: 120px;
   background: #fbfbfb;
+
+  @include _900 {
+    margin-bottom: 60px;
+  }
 }
 
 .team__content-wrapper {
@@ -10,6 +14,11 @@
 
   @include _1300 {
     padding-top: 80px;
+  }
+
+  @include _900 {
+    padding: 50px 0;
+    height: 600px;
   }
 }
 
@@ -27,6 +36,11 @@
 
   @include _1300 {
     justify-content: center;
+  }
+
+  @include _900 {
+    padding-bottom: 200px;
+    width: 400px;
   }
 }
 

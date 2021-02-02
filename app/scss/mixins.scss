@@ -60,6 +60,12 @@
   }
 }
 
+@mixin _900 {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
 @mixin height480 {
   @media (max-height: 480px) {
     @content;

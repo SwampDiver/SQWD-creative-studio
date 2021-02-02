@@ -27,6 +27,27 @@
     width: 279px;
     height: 299px;
   }
+
+  @include _900 {
+    position: absolute;
+    margin: 0 auto;
+
+    &:hover {
+      z-index: 10;
+    }
+
+    &--first {
+      left: 10%;
+    }
+
+    &--second {
+      left: 35%;
+    }
+
+    &--third {
+      left: 57%;
+    }
+  }
 }
 
 .team-card__text-wrapper {
@@ -41,6 +62,11 @@
 
   @include _1300 {
     bottom: -78px;
+  }
+
+  @include _900 {
+    align-items: start;
+    padding-left: 10px;
   }
 }
 
@@ -61,6 +87,10 @@
     height: 2px;
     background-color: #000;
     transform: translateX(-50%);
+
+    @include _900 {
+      left: 23px;
+    }
   }
 }
 

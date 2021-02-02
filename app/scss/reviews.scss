@@ -5,10 +5,18 @@
   margin: 0 auto 117px;
   padding: 0 30px;
   max-width: 1245px;
+
+  @include _900 {
+    margin-bottom: 70px;
+  }
 }
 
 .reviews__blockquote {
   width: 735px;
+
+  @include _900 {
+    width: 500px;
+  }
 }
 
 .reviews__text {

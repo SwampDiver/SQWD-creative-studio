@@ -1,6 +1,10 @@
 .contacts {
   display: flex;
   margin: 0 auto;
+
+  @include _900 {
+    display: block;
+  }
 }
 
 .contacts__block {
@@ -22,6 +26,10 @@
     @include _1300 {
       top: 60px;
     }
+
+    @include _900 {
+      top: 30px;
+    }
   }
 
   &:hover .contacts__title,
@@ -39,7 +47,7 @@
     background-image: url("../img/mail.svg");
 
     @include _1300 {
-      top: 60px;
+      top: 30px;
     }
   }
 
@@ -77,6 +85,10 @@
 
   @include _1300 {
     padding: 90px 0 80px;
+  }
+
+  @include _900 {
+    padding: 50px 0 30px;
   }
 }
 

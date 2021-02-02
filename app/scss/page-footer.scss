@@ -13,6 +13,10 @@
   @include _1300 {
     padding: 70px 0 30px;
   }
+
+  @include _900 {
+    padding: 45px 0 35px;
+  }
 }
 
 .page-footer__socials {
