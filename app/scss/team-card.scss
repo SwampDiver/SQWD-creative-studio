@@ -5,18 +5,10 @@
   height: 398px;
 
   &:hover .team-card__text-wrapper {
+    @include greenUnderline;
+
     bottom: 0;
     animation: appearance 1s;
-
-    @keyframes appearance {
-      from {
-        bottom: -70px;
-      }
-
-      to {
-        bottom: 0;
-      }
-    }
   }
 
   &:hover .team-card__name::after {
@@ -31,21 +23,48 @@
   @include _900 {
     position: absolute;
     margin: 0 auto;
+    box-shadow: -8px 2px 5px 0 rgba(0, 0, 0, 0.4);
 
     &:hover {
       z-index: 10;
+      animation: moveUp 0.5s linear;
+
+      @keyframes moveUp {
+        0% {
+          opacity: 0.2;
+        }
+
+        50% {
+          opacity: 0.5;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
     }
 
     &--first {
-      left: 10%;
+      left: 0;
     }
 
     &--second {
-      left: 35%;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     &--third {
-      left: 57%;
+      right: 0;
+    }
+  }
+
+  @keyframes appearance {
+    from {
+      bottom: -70px;
+    }
+
+    to {
+      bottom: 0;
     }
   }
 }

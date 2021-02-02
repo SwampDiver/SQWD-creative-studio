@@ -17,7 +17,7 @@
   }
 
   @include _900 {
-    padding: 50px 0;
+    padding: 50px;
     height: 600px;
   }
 }
@@ -29,6 +29,7 @@
 }
 
 .team__card-wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -40,7 +41,7 @@
 
   @include _900 {
     padding-bottom: 200px;
-    width: 400px;
+    width: 100%;
   }
 }
 

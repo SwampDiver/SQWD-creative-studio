@@ -13,7 +13,7 @@
   }
 
   &:hover {
-    box-shadow: 0 -5px 0 -2px #70bf73  inset;
+    @include greenUnderline;
   }
 
   &:hover .services-card__icon,

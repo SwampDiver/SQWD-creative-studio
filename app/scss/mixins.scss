@@ -46,6 +46,33 @@
   }
 }
 
+// greenline
+
+@mixin greenUnderline {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #70bf73;
+    animation-name: greenline;
+    animation-duration: 0.7s;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+
+    @keyframes greenline {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+  }
+}
+
 // media
 
 @mixin _1300 {
