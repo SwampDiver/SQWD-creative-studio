@@ -14,13 +14,12 @@
   @include _900 {
     margin-bottom: 70px;
   }
-}
 
-.page-header__nav {
-  margin: 0 auto 20vh;
-
-  @include height480 {
-    margin-bottom: 10vh;
+  @include _700 {
+    background: url("../img/bitmap-0.5.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
@@ -29,6 +28,14 @@
 
   margin: 0;
   padding: 0 10px;
+}
+
+.page-header__nav {
+  margin: 0 auto 20vh;
+
+  @include height480 {
+    margin-bottom: 10vh;
+  }
 }
 
 .page-header__content-wrapper {

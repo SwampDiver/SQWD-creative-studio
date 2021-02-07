@@ -17,6 +17,10 @@
     margin-bottom: 60px;
     padding: 0 50px;
   }
+
+  @include _700 {
+    background-image: url("../img/triple-img-0.5.png");
+  }
 }
 
 .about-us__title {

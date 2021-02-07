@@ -125,6 +125,11 @@
     width: 342px;
     height: 334px;
   }
+
+  @include _500 {
+    width: 228px;
+    height: 222px;
+  }
 }
 
 .portfolio-card__description-wrapper {

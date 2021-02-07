@@ -1,0 +1,109 @@
+.toggle-button {
+  position: relative;
+  display: none;
+  margin: 50px auto;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  transition: 0.25s ease-in-out;
+  cursor: pointer;
+
+  &__hamburger {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__cross {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(45deg);
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  &--open {
+    .toggle-button__line--hamburger {
+      width: 0%;
+
+      &:nth-child(1) {
+        transition-delay: 0s;
+      }
+
+      &:nth-child(2) {
+        transition-delay: 0.125s;
+      }
+
+      &:nth-child(3) {
+        transition-delay: 0.25s;
+      }
+    }
+
+    .toggle-button__line--cross {
+      &:nth-child(1) {
+        height: 80%;
+        transition-delay: 0.625s;
+      }
+
+      &:nth-child(2) {
+        width: 80%;
+        transition-delay: 0.375s;
+      }
+    }
+  }
+
+  @include _500 {
+    display: block;
+  }
+}
+
+.toggle-button__line {
+  display: block;
+  border-radius: 2px;
+  background: #000;
+
+  &--hamburger {
+    position: relative;
+    left: 10px;
+    top: 0;
+    margin: 10px 0;
+    width: 30px;
+    height: 4px;
+
+    &:nth-child(1) {
+      transition-delay: 0.5s;
+    }
+
+    &:nth-child(2) {
+      transition-delay: 0.625s;
+    }
+
+    &:nth-child(3) {
+      transition-delay: 0.75s;
+    }
+  }
+
+  &--cross {
+    &:nth-child(1) {
+      position: absolute;
+      left: 23px;
+      top: 6px;
+      width: 4px;
+      height: 0%;
+      transition-delay: 0s;
+    }
+
+    &:nth-child(2) {
+      position: absolute;
+      left: 6px;
+      top: 23px;
+      width: 0%;
+      height: 4px;
+      transition-delay: 0.25s;
+    }
+  }
+}

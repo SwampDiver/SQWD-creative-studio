@@ -1,7 +1,6 @@
 {
   "name": "gulp-start",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {},
   "author": "",
@@ -27,5 +26,14 @@
   },
   "browserslist": [
     "defaults"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SwampDiver/Creative-studio-site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SwampDiver/Creative-studio-site/issues"
+  },
+  "homepage": "https://github.com/SwampDiver/Creative-studio-site#readme",
+  "description": ""
 }

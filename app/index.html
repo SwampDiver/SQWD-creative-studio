@@ -8,8 +8,12 @@
   </head>
   <body>
     <header class="page-header">
+      <h1 class="page-header__logo">SQWD</h1>
       <nav class="page-header__nav main-nav">
-        <h1 class="page-header__logo">SQWD</h1>
+        <div class="main-nav__toggle toggle-button">
+          <div class="toggle-button__hamburger"><span class="toggle-button__line toggle-button__line--hamburger"></span><span class="toggle-button__line toggle-button__line--hamburger"></span><span class="toggle-button__line toggle-button__line--hamburger"></span></div>
+          <div class="toggle-button__cross"><span class="toggle-button__line toggle-button__line--cross"></span><span class="toggle-button__line toggle-button__line--cross"></span></div>
+        </div>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="#">Works</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">About</a></li>
@@ -83,6 +87,7 @@
           <div class="portfolio__card portfolio-card"><a class="portfolio-card__link" href="#"></a>
             <h3 class="portfolio-card__title"><a class="portfolio-card__title-link" href="#"><span class="portfolio-card__title-first-line">A KITTEN’S</span><br/><span class="portfolio-card__title-second-line">LIFE</span></a></h3>
             <picture>
+              <source media="(max-width: 500px)" srcset="img/cat-0.5.jpg"/>
               <source media="(max-width: 1100px)" srcset="img/cat-0.75.jpg"/><img class="portfolio-card__image" src="img/cat.jpg" alt="cat"/>
             </picture>
             <div class="portfolio-card__description-wrapper">
@@ -93,6 +98,7 @@
           <div class="portfolio__card portfolio-card"><a class="portfolio-card__link" href="#"></a>
             <h3 class="portfolio-card__title"><a class="portfolio-card__title-link" href="#"><span class="portfolio-card__title-first-line">100 YEARS</span><br/><span class="portfolio-card__title-second-line">PHOTOGRAPHY</span></a></h3>
             <picture>
+              <source media="(max-width: 500px)" srcset="img/camera-0.5.jpg"/>
               <source media="(max-width: 1100px)" srcset="img/camera-0.75.jpg"/><img class="portfolio-card__image" src="img/camera.jpg" alt="camera"/>
             </picture>
             <div class="portfolio-card__description-wrapper">
@@ -103,6 +109,7 @@
           <div class="portfolio__card portfolio-card"><a class="portfolio-card__link" href="#"></a>
             <h3 class="portfolio-card__title"><a class="portfolio-card__title-link" href="#"><span class="portfolio-card__title-first-line">APPLE’s</span><br/><span class="portfolio-card__title-second-line">LOST MAGIC</span></a></h3>
             <picture>
+              <source media="(max-width: 500px)" srcset="img/mac-0.5.jpg"/>
               <source media="(max-width: 1100px)" srcset="img/mac-0.75.jpg"/><img class="portfolio-card__image" src="img/mac.jpg" alt="workplace"/>
             </picture>
             <div class="portfolio-card__description-wrapper">
@@ -113,6 +120,7 @@
           <div class="portfolio__card portfolio-card"><a class="portfolio-card__link" href="#"></a>
             <h3 class="portfolio-card__title"><a class="portfolio-card__title-link" href="#"><span class="portfolio-card__title-first-line">GROOVEMADE</span><br/><span class="portfolio-card__title-second-line">PRODUCTS FOR MAC</span></a></h3>
             <picture>
+              <source media="(max-width: 500px)" srcset="img/laptop-0.5.jpg"/>
               <source media="(max-width: 1100px)" srcset="img/laptop-0.75.jpg"/><img class="portfolio-card__image" src="img/laptop.jpg" alt="laptop"/>
             </picture>
             <div class="portfolio-card__description-wrapper">
@@ -130,6 +138,7 @@
           <div class="team__card-wrapper">
             <div class="team__card team-card team-card--first">
               <picture>
+                <source media="(max-width: 500px)" srcset="img/person1-0.5.jpg"/>
                 <source media="(max-width: 1300px)" srcset="img/person1-0.75.jpg"/><img class="team-card__image" src="img/person1.jpg" alt="photo of Tom Jones"/>
               </picture>
               <div class="team-card__text-wrapper">
@@ -140,6 +149,7 @@
             </div>
             <div class="team__card team-card team-card--second">
               <picture>
+                <source media="(max-width: 500px)" srcset="img/person2-0.5.jpg"/>
                 <source media="(max-width: 1300px)" srcset="img/person2-0.75.jpg"/><img class="team-card__image" src="img/person2.jpg" alt="photo of Michael Fraup"/>
               </picture>
               <div class="team-card__text-wrapper">
@@ -150,6 +160,7 @@
             </div>
             <div class="team__card team-card team-card--third">
               <picture>
+                <source media="(max-width: 500px)" srcset="img/person3-0.5.jpg"/>
                 <source media="(max-width: 1300px)" srcset="img/person3-0.75.jpg"/><img class="team-card__image" src="img/person3.jpg" alt="photo of Tim Cahill"/>
               </picture>
               <div class="team-card__text-wrapper">
