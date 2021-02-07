@@ -6,6 +6,25 @@
   text-transform: uppercase;
 }
 
+.main-nav--no-js {
+  @include _700 {
+    .toggle-button {
+      display: none;
+    }
+
+    .main-nav__list {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+      display: block;
+      flex-direction: column;
+      padding: 105px 150px 50px 50px;
+      background: rgba(0, 0, 0, 0.9);
+    }
+  }
+}
+
 .main-nav__list {
   @include font(400, 14px, 21px, #fff);
 
@@ -31,9 +50,11 @@
   }
 }
 
-// .main-nav__list--no-js .main-nav__toggle {
-//   display: none;
-// }
+.main-nav__list--no-js .main-nav__toggle {
+  @include _700 {
+    display: none;
+  }
+}
 
 .main-nav__item {
   position: relative;

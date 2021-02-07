@@ -1,8 +1,13 @@
-// import '../scss/style.scss';
+
 'use strict';
-const mainMenu = document.querySelector ('.main-nav__list');
-const menuButton = document.querySelector ('.toggle-button');
+
+
+const mainNav = document.querySelector ('.main-nav')
 const logo = document.querySelector ('.page-header__logo');
+const menuButton = mainNav.querySelector ('.toggle-button');
+const mainMenu = mainNav.querySelector ('.main-nav__list');
+
+mainNav.classList.remove('main-nav--no-js');
 
 menuButton.addEventListener('click', (evt) => {
   evt.preventDefault();
