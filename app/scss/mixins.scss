@@ -8,6 +8,44 @@
   color: $color;
 }
 
+// media
+
+@mixin _1300 {
+  @media (max-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin _1100 {
+  @media (max-width: 1100px) {
+    @content;
+  }
+}
+
+@mixin _900 {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin _700 {
+  @media (max-width: 700px) {
+    @content;
+  }
+}
+
+@mixin _500 {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin height520 {
+  @media (max-height: 520px) {
+    @content;
+  }
+}
+
 // Sections title
 
 @mixin title {
@@ -24,6 +62,10 @@
     width: 45px;
     height: 2px;
     background-color: #252525;
+  }
+
+  @include _500 {
+    @include font(700, 30px, 50px, #252525);
   }
 }
 
@@ -70,43 +112,5 @@
         width: 100%;
       }
     }
-  }
-}
-
-// media
-
-@mixin _1300 {
-  @media (max-width: 1300px) {
-    @content;
-  }
-}
-
-@mixin _1100 {
-  @media (max-width: 1100px) {
-    @content;
-  }
-}
-
-@mixin _900 {
-  @media (max-width: 900px) {
-    @content;
-  }
-}
-
-@mixin _700 {
-  @media (max-width: 700px) {
-    @content;
-  }
-}
-
-@mixin _500 {
-  @media (max-width: 500px) {
-    @content;
-  }
-}
-
-@mixin height480 {
-  @media (max-height: 480px) {
-    @content;
   }
 }

@@ -30,29 +30,43 @@
   @include _1100 {
     margin: 0 auto 60px;
   }
+
+  @include _700 {
+    max-width: 300px;
+  }
+
+  @include _500 {
+    max-width: 250px;
+  }
 }
 
 .portfolio__nav-list {
   display: flex;
   justify-content: space-between;
-  max-width: 550px;
   color: #252525;
+
+  @include _700 {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
 }
 
 .portfolio__link {
-  padding: 20px;
+  padding: 20px 20px 20px 0;
   opacity: 0.3;
 
   &:hover {
     opacity: 1;
   }
 
-  &:first-child {
-    padding: 20px 20px 20px 0;
-  }
-
   @include _1300 {
     display: flex;
+    padding: 20px;
+  }
+
+  @include _700 {
+    padding: 10px;
   }
 }
 
@@ -67,10 +81,13 @@
   }
 
   @include _1100 {
+    gap: 60px 0;
+  }
+
+  @include _900 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 60px 0;
   }
 }
 

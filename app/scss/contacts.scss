@@ -90,6 +90,10 @@
   @include _900 {
     padding: 50px 0 30px;
   }
+
+  @include _500 {
+    width: 270px;
+  }
 }
 
 .contacts__title {

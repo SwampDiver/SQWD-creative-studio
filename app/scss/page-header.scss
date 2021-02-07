@@ -16,6 +16,7 @@
   }
 
   @include _700 {
+    margin-bottom: 0;
     background: url("../img/bitmap-0.5.jpg");
     background-position: center;
     background-size: cover;
@@ -26,9 +27,14 @@
 .page-header__nav-wrapper {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto 20vh;
-  padding: 5vh 30px 0;
+  margin: 0 auto 18vh;
+  padding: 40px 30px 0;
+  min-height: 110px;
   max-width: 1210px;
+
+  @include height520 {
+    margin: 0 auto 10vh;
+  }
 }
 
 .page-header__logo {
@@ -42,18 +48,10 @@
   @include _700 {
     position: absolute;
     right: 138px;
-    top: 20px;
+    top: 40px;
     z-index: 2;
   }
 }
-
-// .page-header__nav {
-//   // margin: 0 auto 20vh;
-
-//   @include height480 {
-//     margin-bottom: 10vh;
-//   }
-// }
 
 .page-header__content-wrapper {
   display: flex;
@@ -64,11 +62,20 @@
   height: 65vh;
 
   @include _1300 {
-    width: 900px;
+    max-width: 900px;
   }
 
   @include _1100 {
-    width: 600px;
+    max-width: 600px;
+  }
+
+  @include _700 {
+    max-width: 455px;
+  }
+
+  @include _500 {
+    padding: 0 30px 60px;
+    max-width: 300px;
   }
 }
 
@@ -79,13 +86,25 @@
   letter-spacing: 4.5px;
   text-align: center;
 
-  @include height480 {
+  @include height520 {
     font-size: 48px;
+    line-height: 75px;
   }
 
   @include _1100 {
     font-size: 58px;
     line-height: 80px;
+  }
+
+  @include _700 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  @include _500 {
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: 1.5px;
   }
 }
 
@@ -94,8 +113,19 @@
   margin: 0;
   font-weight: 500;
   font-size: 20px;
+  line-height: 30px;
   text-align: center;
   opacity: 0.8;
+
+  @include height520 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  @include _700 {
+    font-size: 15px;
+    line-height: 30px;
+  }
 }
 
 .page-header__controls-wrapper {
@@ -172,5 +202,9 @@
       font-size: 25px;
       line-height: 45px;
     }
+  }
+
+  @include height520 {
+    display: none;
   }
 }

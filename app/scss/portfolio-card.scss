@@ -22,6 +22,10 @@
     @include _1100 {
       top: 220px;
     }
+
+    @include _500 {
+      top: 140px;
+    }
   }
 
   &:nth-child(even) {
@@ -32,7 +36,11 @@
     }
 
     @include _900 {
-      margin: 0 10px;
+      margin: 0 15px;
+    }
+
+    @include _500 {
+      margin-bottom: 150px;
     }
   }
 
@@ -47,12 +55,22 @@
   &:nth-child(even) .portfolio-card__subtitle,
   &:nth-child(even) .portfolio-card__text {
     text-align: right;
+
+    @include _1300 {
+      text-align: left;
+    }
   }
 
   @include _1100 {
-    margin: 0 10px;
+    margin: 0 15px;
     width: 342px;
     height: 465px;
+  }
+
+  @include _500 {
+    margin-bottom: 150px;
+    width: 228px;
+    height: 223px;
   }
 }
 
@@ -64,6 +82,10 @@
   bottom: 0;
   z-index: 1;
   cursor: pointer;
+
+  @include _700 {
+    display: none;
+  }
 }
 
 .portfolio-card__title {
@@ -80,9 +102,15 @@
   }
 
   @include _1100 {
-    @include font(300, 38px, 57px, #252525);
-
     top: 220px;
+    font-size: 38px;
+    line-height: 57px;
+  }
+
+  @include _500 {
+    top: 140px;
+    font-size: 25px;
+    line-height: 35px;
   }
 }
 
@@ -135,6 +163,14 @@
 .portfolio-card__description-wrapper {
   margin: 0 0 0 auto;
   width: 270px;
+
+  @include _1300 {
+    margin: 0;
+  }
+
+  @include _500 {
+    width: 230px;
+  }
 }
 
 .portfolio-card__subtitle {
@@ -179,5 +215,9 @@
     width: 40px;
     height: 3px;
     background-color: #70bf73;
+  }
+
+  @include _700 {
+    display: block;
   }
 }

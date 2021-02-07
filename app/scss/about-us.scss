@@ -19,6 +19,7 @@
   }
 
   @include _700 {
+    margin-bottom: 0;
     background-image: url("../img/triple-img-0.5.png");
   }
 }
@@ -58,10 +59,23 @@
 
   &--up {
     margin-bottom: 110px;
+
+    @include _500 {
+      margin-bottom: 70px;
+    }
   }
 
   &--down {
     align-self: flex-end;
     padding-bottom: 75px;
+
+    @include _500 {
+      align-self: start;
+      padding-bottom: 50px;
+    }
+  }
+
+  @include _500 {
+    width: 230px;
   }
 }

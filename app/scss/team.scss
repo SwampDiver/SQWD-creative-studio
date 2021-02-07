@@ -20,6 +20,11 @@
     padding: 50px;
     height: 600px;
   }
+
+  @include _700 {
+    display: block;
+    height: auto;
+  }
 }
 
 .team__title {
@@ -43,10 +48,27 @@
     padding-bottom: 200px;
     width: 100%;
   }
+
+  @include _700 {
+    display: block;
+    padding-bottom: 0;
+  }
 }
 
 .team__card {
   @include _1300 {
     margin: 0 10px;
+  }
+
+  @include _900 {
+    margin: 0 auto;
+  }
+
+  @include _700 {
+    margin-bottom: 40px;
+  }
+
+  @include _500 {
+    margin-bottom: 0;
   }
 }

@@ -12,10 +12,15 @@
 }
 
 .reviews__blockquote {
-  width: 735px;
+  margin: 0;
+  max-width: 735px;
 
   @include _900 {
-    width: 500px;
+    max-width: 500px;
+  }
+
+  @include _700 {
+    max-width: 350px;
   }
 }
 
@@ -39,6 +44,11 @@
     height: 20px;
     background-image: url("../img/quote-hand-drawn-symbol.png");
     transform: translateX(-50%);
+  }
+
+  @include _700 {
+    font-size: 12px;
+    line-height: 25px;
   }
 }
 
@@ -69,6 +79,10 @@
     height: 1px;
     background-color: #d8d8d8;
     transform: translateX(-50%);
+
+    @include _700 {
+      width: 250px;
+    }
   }
 }
 

@@ -22,7 +22,6 @@
 
   @include _900 {
     position: absolute;
-    margin: 0 auto;
     box-shadow: -8px 2px 5px 0 rgba(0, 0, 0, 0.4);
 
     &:hover {
@@ -58,6 +57,23 @@
     }
   }
 
+  @include _700 {
+    position: relative;
+    box-shadow: none;
+    pointer-events: none;
+
+    &--second {
+      left: 0;
+      transform: translateX(0);
+    }
+
+    @include _500 {
+      overflow: auto;
+      width: 186px;
+      height: 370px;
+    }
+  }
+
   @keyframes appearance {
     from {
       bottom: -70px;
@@ -87,6 +103,14 @@
     align-items: start;
     padding-left: 10px;
   }
+
+  @include _700 {
+    bottom: 0;
+  }
+
+  @include _500 {
+    bottom: 32px;
+  }
 }
 
 .team-card__name {
@@ -109,6 +133,10 @@
 
     @include _900 {
       left: 23px;
+    }
+
+    @include _700 {
+      display: block;
     }
   }
 }
