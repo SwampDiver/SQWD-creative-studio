@@ -1,11 +1,11 @@
-
 'use strict';
 
+// mobile menu
 
-const mainNav = document.querySelector ('.main-nav')
-const logo = document.querySelector ('.page-header__logo');
-const menuButton = mainNav.querySelector ('.toggle-button');
-const mainMenu = mainNav.querySelector ('.main-nav__list');
+const mainNav = document.querySelector('.main-nav'),
+  logo = document.querySelector('.page-header__logo'),
+  menuButton = mainNav.querySelector('.toggle-button'),
+  mainMenu = mainNav.querySelector('.main-nav__list');
 
 mainNav.classList.remove('main-nav--no-js');
 
@@ -13,5 +13,38 @@ menuButton.addEventListener('click', (evt) => {
   evt.preventDefault();
   menuButton.classList.toggle("toggle-button--open");
   mainMenu.classList.toggle("main-nav__list--open");
-  logo.classList.toggle("page-header__logo--in-menu")
+  logo.classList.toggle("page-header__logo--in-menu");
+});
+
+// background image
+
+const header = document.querySelector('.page-header'),
+  btnsParent = header.querySelector('page-header__controls-list'),
+  sliderBtns = header.querySelectorAll('.page-header__controls-button'),
+  btnsArr = [];
+
+const removeActive = () => {
+  sliderBtns.forEach(item => {
+    item.classList.remove('page-header__controls-button--active');
+  });
+};
+
+sliderBtns.forEach(btn => {
+  addEventListener('click', (evt) => {
+    evt.preventDefault();
+    const target = evt.target;
+
+    if (target && target.classList.contains('page-header__controls-button')) {
+      removeActive();
+      evt.target.classList.add('page-header__controls-button--active');
+
+      btnsArr.forEach((item, i) => {
+        if (item.classList.contains('page-header__controls-button--active')) {
+          header.className = 'page-header';
+          header.classList.add(`page-header--bg${i + 1}`);
+        }
+      });
+    }
+  });
+  btnsArr.push(btn);
 });

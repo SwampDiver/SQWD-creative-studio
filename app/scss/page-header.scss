@@ -2,10 +2,37 @@
   margin-bottom: 150px;
   height: 100vh;
   color: #fff;
-  background: url("../img/bitmap.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #000;
+
+  // transition: all 0.5s;
+  transition: 0.5s;
+
+  &--bg1 {
+    background: url("../img/bitmap1.jpg");
+
+    @include _700 {
+      background: url("../img/bitmap1-0.5.jpg");
+    }
+  }
+
+  &--bg2 {
+    background: url("../img/bitmap2.jpg");
+
+    @include _700 {
+      background: url("../img/bitmap2-0.5.jpg");
+    }
+  }
+
+  &--bg3 {
+    background: url("../img/bitmap3.jpg");
+
+    @include _700 {
+      background: url("../img/bitmap3-0.5.jpg");
+    }
+  }
 
   @include _1100 {
     margin-bottom: 90px;
@@ -17,7 +44,6 @@
 
   @include _700 {
     margin-bottom: 0;
-    background: url("../img/bitmap-0.5.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -152,13 +178,16 @@
 
 .page-header__controls-button {
   display: block;
+  outline: none;
   border: none;
   padding: 0;
   color: rgba(255, 255, 255, 0.45);
   background: transparent;
+  transition: 0.5s all;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba(255, 255, 255, 1);
   }
 
