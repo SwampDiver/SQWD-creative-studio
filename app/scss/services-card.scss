@@ -63,7 +63,8 @@
   letter-spacing: 0.6px;
   opacity: 0.5;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #70bf73;
   }
 }

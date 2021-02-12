@@ -43,7 +43,12 @@
 .portfolio__nav-list {
   display: flex;
   justify-content: space-between;
+  width: 500px;
   color: #252525;
+
+  @include _1300 {
+    width: auto;
+  }
 
   @include _700 {
     flex-wrap: wrap;
@@ -53,10 +58,12 @@
 }
 
 .portfolio__link {
+  outline: none;
   padding: 20px 20px 20px 0;
   opacity: 0.3;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 1;
   }
 
@@ -100,7 +107,8 @@
   padding: 15px;
   letter-spacing: 2px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #70bf73;
   }
 
