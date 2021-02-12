@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="./css/style.min.css"/>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/opensans300.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/oswald.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/oswald300.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/oswald500.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/oswald700.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
     <title>SQWD creative studio</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--bg1">
       <div class="page-header__nav-wrapper">
         <h1 class="page-header__logo">SQWD</h1>
         <nav class="page-header__nav main-nav main-nav--no-js">
@@ -30,13 +36,13 @@
         <div class="page-header__controls-wrapper">
           <ul class="page-header__controls-list">
             <li class="page-header__controls-item">
-              <button class="page-header__controls-button page-header__controls-button--active" type="button" aria-label="Первый слайд">01</button>
+              <button class="page-header__controls-button page-header__controls-button--active" type="button" aria-label="First slide">01</button>
             </li>
             <li class="page-header__controls-item">
-              <button class="page-header__controls-button" type="button" aria-label="Второй слайд">02</button>
+              <button class="page-header__controls-button" type="button" aria-label="Second slide">02</button>
             </li>
             <li class="page-header__controls-item">
-              <button class="page-header__controls-button" type="button" aria-label="Третий слайд">03</button>
+              <button class="page-header__controls-button" type="button" aria-label="Third slide">03</button>
             </li>
           </ul>
         </div>
@@ -56,17 +62,17 @@
           <div class="services__cards-wrapper">
             <article class="services__article services-card">
               <h3 class="services-card__title">BRANDING</h3>
-              <div class="services-card__icon-wrapper"><img class="services-card__icon" src="./img/graphic-design.svg" width="25" height="25" alt="graphic design icon"/></div>
+              <div class="services-card__icon-wrapper"><img class="services-card__icon" src="./img/icons/graphic-design.svg" width="25" height="25" alt="graphic design icon"/></div>
               <p class="services-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p><a class="services-card__link" href="#">READ MORE</a>
             </article>
             <article class="services__article services-card">
               <h3 class="services-card__title">DESIGN</h3>
-              <div class="services-card__icon-wrapper"><img class="services-card__icon" src="./img/pencil-case.svg" width="25" height="25" alt="pencil case icon"/></div>
+              <div class="services-card__icon-wrapper"><img class="services-card__icon" src="./img/icons/pencil-case.svg" width="25" height="25" alt="pencil case icon"/></div>
               <p class="services-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p><a class="services-card__link" href="#">READ MORE</a>
             </article>
             <article class="services__article services-card">
               <h3 class="services-card__title">DEVELOPMENT</h3>
-              <div class="services-card__icon-wrapper"><img class="services-card__icon" src="./img/coding.svg" width="25" height="25" alt="coding icon"/></div>
+              <div class="services-card__icon-wrapper"><img class="services-card__icon" src="./img/icons/coding.svg" width="25" height="25" alt="coding icon"/></div>
               <p class="services-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p><a class="services-card__link" href="#">READ MORE</a>
             </article>
           </div>
@@ -89,8 +95,11 @@
           <div class="portfolio__card portfolio-card"><a class="portfolio-card__link" href="#"></a>
             <h3 class="portfolio-card__title"><a class="portfolio-card__title-link" href="#"><span class="portfolio-card__title-first-line">A KITTEN’S</span><br/><span class="portfolio-card__title-second-line">LIFE</span></a></h3>
             <picture>
-              <source media="(max-width: 500px)" srcset="img/cat-0.5.jpg"/>
-              <source media="(max-width: 1100px)" srcset="img/cat-0.75.jpg"/><img class="portfolio-card__image" src="img/cat.jpg" alt="cat"/>
+              <source type="image/webp" media="(max-width: 500px)" srcset="img/webp/cat-0.5.webp"/>
+              <source type="image/webp" media="(max-width: 1100px)" srcset="img/webp/cat-0.75.webp"/>
+              <source type="image/webp" srcset="img/webp/cat.webp"/>
+              <source media="(max-width: 500px)" srcset="img/content/cat-0.5.jpg"/>
+              <source media="(max-width: 1100px)" srcset="img/content/cat-0.75.jpg"/><img class="portfolio-card__image" src="img/content/cat.jpg" alt="cat"/>
             </picture>
             <div class="portfolio-card__description-wrapper">
               <h4 class="portfolio-card__subtitle">Photography</h4>
@@ -100,8 +109,11 @@
           <div class="portfolio__card portfolio-card"><a class="portfolio-card__link" href="#"></a>
             <h3 class="portfolio-card__title"><a class="portfolio-card__title-link" href="#"><span class="portfolio-card__title-first-line">100 YEARS</span><br/><span class="portfolio-card__title-second-line">PHOTOGRAPHY</span></a></h3>
             <picture>
-              <source media="(max-width: 500px)" srcset="img/camera-0.5.jpg"/>
-              <source media="(max-width: 1100px)" srcset="img/camera-0.75.jpg"/><img class="portfolio-card__image" src="img/camera.jpg" alt="camera"/>
+              <source type="image/webp" media="(max-width: 500px)" srcset="img/webp/camera-0.5.webp"/>
+              <source type="image/webp" media="(max-width: 1100px)" srcset="img/webp/camera-0.75.webp"/>
+              <source type="image/webp" srcset="img/webp/camera.webp"/>
+              <source media="(max-width: 500px)" srcset="img/content/camera-0.5.jpg"/>
+              <source media="(max-width: 1100px)" srcset="img/content/camera-0.75.jpg"/><img class="portfolio-card__image" src="img/content/camera.jpg" alt="camera"/>
             </picture>
             <div class="portfolio-card__description-wrapper">
               <h4 class="portfolio-card__subtitle">Photography</h4>
@@ -111,8 +123,11 @@
           <div class="portfolio__card portfolio-card"><a class="portfolio-card__link" href="#"></a>
             <h3 class="portfolio-card__title"><a class="portfolio-card__title-link" href="#"><span class="portfolio-card__title-first-line">APPLE’s</span><br/><span class="portfolio-card__title-second-line">LOST MAGIC</span></a></h3>
             <picture>
-              <source media="(max-width: 500px)" srcset="img/mac-0.5.jpg"/>
-              <source media="(max-width: 1100px)" srcset="img/mac-0.75.jpg"/><img class="portfolio-card__image" src="img/mac.jpg" alt="workplace"/>
+              <source type="image/webp" media="(max-width: 500px)" srcset="img/webp/mac-0.5.webp"/>
+              <source type="image/webp" media="(max-width: 1100px)" srcset="img/webp/mac-0.75.webp"/>
+              <source type="image/webp" srcset="img/webp/mac.webp"/>
+              <source media="(max-width: 500px)" srcset="img/content/mac-0.5.jpg"/>
+              <source media="(max-width: 1100px)" srcset="img/content/mac-0.75.jpg"/><img class="portfolio-card__image" src="img/content/mac.jpg" alt="workplace"/>
             </picture>
             <div class="portfolio-card__description-wrapper">
               <h4 class="portfolio-card__subtitle">Photography</h4>
@@ -122,8 +137,11 @@
           <div class="portfolio__card portfolio-card"><a class="portfolio-card__link" href="#"></a>
             <h3 class="portfolio-card__title"><a class="portfolio-card__title-link" href="#"><span class="portfolio-card__title-first-line">GROOVEMADE</span><br/><span class="portfolio-card__title-second-line">PRODUCTS FOR MAC</span></a></h3>
             <picture>
-              <source media="(max-width: 500px)" srcset="img/laptop-0.5.jpg"/>
-              <source media="(max-width: 1100px)" srcset="img/laptop-0.75.jpg"/><img class="portfolio-card__image" src="img/laptop.jpg" alt="laptop"/>
+              <source type="image/webp" media="(max-width: 500px)" srcset="img/webp/laptop-0.5.webp"/>
+              <source type="image/webp" media="(max-width: 1100px)" srcset="img/webp/laptop-0.75.webp"/>
+              <source type="image/webp" srcset="img/webp/laptop.webp"/>
+              <source media="(max-width: 500px)" srcset="img/content/laptop-0.5.jpg"/>
+              <source media="(max-width: 1100px)" srcset="img/content/laptop-0.75.jpg"/><img class="portfolio-card__image" src="img/content/laptop.jpg" alt="laptop"/>
             </picture>
             <div class="portfolio-card__description-wrapper">
               <h4 class="portfolio-card__subtitle">Photography</h4>
@@ -140,8 +158,11 @@
           <div class="team__card-wrapper">
             <div class="team__card team-card team-card--first">
               <picture>
-                <source media="(max-width: 500px)" srcset="img/person1-0.5.jpg"/>
-                <source media="(max-width: 1300px)" srcset="img/person1-0.75.jpg"/><img class="team-card__image" src="img/person1.jpg" alt="photo of Tom Jones"/>
+                <source type="image/webp" media="(max-width: 500px)" srcset="img/webp/person1-0.5.webp"/>
+                <source type="image/webp" media="(max-width: 1300px)" srcset="img/webp/person1-0.75.webp"/>
+                <source type="image/webp" srcset="img/webp/person1.webp"/>
+                <source media="(max-width: 500px)" srcset="img/content/person1-0.5.jpg"/>
+                <source media="(max-width: 1300px)" srcset="img/content/person1-0.75.jpg"/><img class="team-card__image" src="img/content/person1.jpg" alt="photo of Tom Jones"/>
               </picture>
               <div class="team-card__text-wrapper">
                 <h3 class="team-card__name">Tom Jones</h3>
@@ -151,8 +172,11 @@
             </div>
             <div class="team__card team-card team-card--second">
               <picture>
-                <source media="(max-width: 500px)" srcset="img/person2-0.5.jpg"/>
-                <source media="(max-width: 1300px)" srcset="img/person2-0.75.jpg"/><img class="team-card__image" src="img/person2.jpg" alt="photo of Michael Fraup"/>
+                <source type="image/webp" media="(max-width: 500px)" srcset="img/webp/person2-0.5.webp"/>
+                <source type="image/webp" media="(max-width: 1300px)" srcset="img/webp/person3-0.75.webp"/>
+                <source type="image/webp" srcset="img/webp/person2.webp"/>
+                <source media="(max-width: 500px)" srcset="img/content/person2-0.5.jpg"/>
+                <source media="(max-width: 1300px)" srcset="img/content/person2-0.75.jpg"/><img class="team-card__image" src="img/content/person2.jpg" alt="photo of Michael Fraup"/>
               </picture>
               <div class="team-card__text-wrapper">
                 <h3 class="team-card__name">Michael Fraup</h3>
@@ -162,8 +186,11 @@
             </div>
             <div class="team__card team-card team-card--third">
               <picture>
-                <source media="(max-width: 500px)" srcset="img/person3-0.5.jpg"/>
-                <source media="(max-width: 1300px)" srcset="img/person3-0.75.jpg"/><img class="team-card__image" src="img/person3.jpg" alt="photo of Tim Cahill"/>
+                <source type="image/webp" media="(max-width: 500px)" srcset="img/webp/person3-0.5.webp"/>
+                <source type="image/webp" media="(max-width: 1300px)" srcset="img/webp/person3-0.75.webp"/>
+                <source type="image/webp" srcset="img/webp/person3.webp"/>
+                <source media="(max-width: 500px)" srcset="img/content/person3-0.5.jpg"/>
+                <source media="(max-width: 1300px)" srcset="img/content/person3-0.75.jpg"/><img class="team-card__image" src="img/content/person3.jpg" alt="photo of Tim Cahill"/>
               </picture>
               <div class="team-card__text-wrapper">
                 <h3 class="team-card__name">Tim Cahill</h3>
