@@ -9,7 +9,12 @@ html(lang="en")
         link(rel="preload" href="fonts/oswald300.woff2" as="font" crossorigin="anonymous")
         link(rel="preload" href="fonts/oswald500.woff2" as="font" crossorigin="anonymous")
         link(rel="preload" href="fonts/oswald700.woff2" as="font" crossorigin="anonymous")
-        link(rel="stylesheet", href="css/style.min.css")
+        link(rel="preload" href="img/bitmap2.jpg" as="image" media="(min-width: 701px)")
+        link(rel="preload" href="img/bitmap3.jpg" as="image" media="(min-width: 701px)")
+        link(rel="preload" href="img/bitmap2-0.5.jpg" as="image" media="(max-width: 700px)")
+        link(rel="preload" href="img/bitmap3-0.5.jpg" as="image" media="(max-width: 700px)")
+        link(rel="stylesheet" href="css/style.min.css")
+        link(rel="icon" href="img/favicon.ico" type="image/x-icon")
         title SQWD creative studio
     body
       header.page-header.page-header--bg1
@@ -113,9 +118,9 @@ html(lang="en")
                 source(type="image/webp" media="(max-width: 500px)" srcset="img/webp/cat-0.5.webp")
                 source(type="image/webp" media="(max-width: 1100px)" srcset="img/webp/cat-0.75.webp")
                 source(type="image/webp" srcset="img/webp/cat.webp")
-                source(media="(max-width: 500px)" srcset="img/content/cat-0.5.jpg")
-                source(media="(max-width: 1100px)" srcset="img/content/cat-0.75.jpg")
-                img.portfolio-card__image(src="img/content/cat.jpg" alt="cat")
+                source(media="(max-width: 500px)" srcset="img/content/cat-0.5.jpg" width="228" height="223")
+                source(media="(max-width: 1100px)" srcset="img/content/cat-0.75.jpg" width="342" height="334")
+                img.portfolio-card__image(src="img/content/cat.jpg" width="455" height="444" alt="cat")
               .portfolio-card__description-wrapper
                 h4.portfolio-card__subtitle Photography
                 p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -132,9 +137,9 @@ html(lang="en")
                 source(type="image/webp" media="(max-width: 500px)" srcset="img/webp/camera-0.5.webp")
                 source(type="image/webp" media="(max-width: 1100px)" srcset="img/webp/camera-0.75.webp")
                 source(type="image/webp" srcset="img/webp/camera.webp")
-                source(media="(max-width: 500px)" srcset="img/content/camera-0.5.jpg")
-                source(media="(max-width: 1100px)" srcset="img/content/camera-0.75.jpg")
-                img.portfolio-card__image(src="img/content/camera.jpg" alt="camera")
+                source(media="(max-width: 500px)" srcset="img/content/camera-0.5.jpg" width="228" height="223")
+                source(media="(max-width: 1100px)" srcset="img/content/camera-0.75.jpg" width="342" height="334")
+                img.portfolio-card__image(src="img/content/camera.jpg" width="455" height="444" alt="camera")
               .portfolio-card__description-wrapper
                 h4.portfolio-card__subtitle Photography
                 p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -151,9 +156,9 @@ html(lang="en")
                 source(type="image/webp" media="(max-width: 500px)" srcset="img/webp/mac-0.5.webp")
                 source(type="image/webp" media="(max-width: 1100px)" srcset="img/webp/mac-0.75.webp")
                 source(type="image/webp" srcset="img/webp/mac.webp")
-                source(media="(max-width: 500px)" srcset="img/content/mac-0.5.jpg")
-                source(media="(max-width: 1100px)" srcset="img/content/mac-0.75.jpg")
-                img.portfolio-card__image(src="img/content/mac.jpg" alt="workplace")
+                source(media="(max-width: 500px)" srcset="img/content/mac-0.5.jpg" width="228" height="223")
+                source(media="(max-width: 1100px)" srcset="img/content/mac-0.75.jpg"  width="342" height="334")
+                img.portfolio-card__image(src="img/content/mac.jpg" width="455" height="444" alt="workplace")
               .portfolio-card__description-wrapper
                 h4.portfolio-card__subtitle Photography
                 p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -170,9 +175,9 @@ html(lang="en")
                 source(type="image/webp" media="(max-width: 500px)" srcset="img/webp/laptop-0.5.webp")
                 source(type="image/webp" media="(max-width: 1100px)" srcset="img/webp/laptop-0.75.webp")
                 source(type="image/webp" srcset="img/webp/laptop.webp")
-                source(media="(max-width: 500px)" srcset="img/content/laptop-0.5.jpg")
-                source(media="(max-width: 1100px)" srcset="img/content/laptop-0.75.jpg")
-                img.portfolio-card__image(src="img/content/laptop.jpg" alt="laptop")
+                source(media="(max-width: 500px)" srcset="img/content/laptop-0.5.jpg" width="228" height="223")
+                source(media="(max-width: 1100px)" srcset="img/content/laptop-0.75.jpg" width="342" height="334")
+                img.portfolio-card__image(src="img/content/laptop.jpg" width="455" height="444" alt="laptop")
               .portfolio-card__description-wrapper
                 h4.portfolio-card__subtitle Photography
                 p.portfolio-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -190,9 +195,9 @@ html(lang="en")
                   source(type="image/webp" media="(max-width: 500px)" srcset="img/webp/person1-0.5.webp")
                   source(type="image/webp" media="(max-width: 1300px)" srcset="img/webp/person1-0.75.webp")
                   source(type="image/webp" srcset="img/webp/person1.webp")
-                  source(media="(max-width: 500px)" srcset="img/content/person1-0.5.jpg")
-                  source(media="(max-width: 1300px)" srcset="img/content/person1-0.75.jpg")
-                  img.team-card__image(src="img/content/person1.jpg" alt="photo of Tom Jones")
+                  source(media="(max-width: 500px)" srcset="img/content/person1-0.5.jpg" width="185" height="199")
+                  source(media="(max-width: 1300px)" srcset="img/content/person1-0.75.jpg" width="278" height="299")
+                  img.team-card__image(src="img/content/person1.jpg" width="370" height="398" alt="photo of Tom Jones")
                 .team-card__text-wrapper
                   h3.team-card__name Tom Jones
                   p.team-card__position Designer
@@ -201,11 +206,11 @@ html(lang="en")
               .team__card.team-card.team-card--second
                 picture
                   source(type="image/webp" media="(max-width: 500px)" srcset="img/webp/person2-0.5.webp")
-                  source(type="image/webp" media="(max-width: 1300px)" srcset="img/webp/person3-0.75.webp")
+                  source(type="image/webp" media="(max-width: 1300px)" srcset="img/webp/person2-0.75.webp")
                   source(type="image/webp" srcset="img/webp/person2.webp")
-                  source(media="(max-width: 500px)" srcset="img/content/person2-0.5.jpg")
-                  source(media="(max-width: 1300px)" srcset="img/content/person2-0.75.jpg")
-                  img.team-card__image(src="img/content/person2.jpg" alt="photo of Michael Fraup")
+                  source(media="(max-width: 500px)" srcset="img/content/person2-0.5.jpg" width="185" height="199")
+                  source(media="(max-width: 1300px)" srcset="img/content/person2-0.75.jpg" width="278" height="299")
+                  img.team-card__image(src="img/content/person2.jpg" width="370" height="398" alt="photo of Michael Fraup")
                 .team-card__text-wrapper
                   h3.team-card__name Michael Fraup
                   p.team-card__position Creative Director
@@ -216,9 +221,9 @@ html(lang="en")
                   source(type="image/webp" media="(max-width: 500px)" srcset="img/webp/person3-0.5.webp")
                   source(type="image/webp" media="(max-width: 1300px)" srcset="img/webp/person3-0.75.webp")
                   source(type="image/webp" srcset="img/webp/person3.webp")
-                  source(media="(max-width: 500px)" srcset="img/content/person3-0.5.jpg")
-                  source(media="(max-width: 1300px)" srcset="img/content/person3-0.75.jpg")
-                  img.team-card__image(src="img/content/person3.jpg" alt="photo of Tim Cahill")
+                  source(media="(max-width: 500px)" srcset="img/content/person3-0.5.jpg" width="185" height="199")
+                  source(media="(max-width: 1300px)" srcset="img/content/person3-0.75.jpg" width="278" height="299")
+                  img.team-card__image(src="img/content/person3.jpg" width="370" height="398" alt="photo of Tim Cahill")
                 .team-card__text-wrapper
                   h3.team-card__name Tim Cahill
                   p.team-card__position Developer
@@ -264,11 +269,11 @@ html(lang="en")
           .page-footer__socials.socials
             ul.socials__list
               li.socials__item
-                a.socials__link.socials__link--fb(href="#")
+                a.socials__link.socials__link--fb(href="#" aria-label="facebook")
               li.socials__item
-                a.socials__link.socials__link--twitter(href="#")
+                a.socials__link.socials__link--twitter(href="#" aria-label="twitter")
               li.socials__item
-                a.socials__link.socials__link--pinterest(href="#")
+                a.socials__link.socials__link--pinterest(href="#" aria-label="pinterest")
           p.page-footer__copyright Copyright 2016 - All Rights Reserved - Designed by JD
       script(src = "./js/main.min.js")
 
