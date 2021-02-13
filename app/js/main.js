@@ -19,17 +19,24 @@ menuButton.addEventListener('click', (evt) => {
 // background image
 
 const header = document.querySelector('.page-header'),
-  btnsParent = header.querySelector('page-header__controls-list'),
-  sliderBtns = header.querySelectorAll('.page-header__controls-button'),
-  btnsArr = [];
+  sliderBtns = header.querySelectorAll('.page-header__controls-button');
 
 const removeActive = () => {
-  sliderBtns.forEach(item => {
-    item.classList.remove('page-header__controls-button--active');
+  sliderBtns.forEach(btn => {
+    btn.classList.remove('page-header__controls-button--active');
   });
 };
 
-sliderBtns.forEach(btn => {
+const showSlide = () => {
+  sliderBtns.forEach((item, i) => {
+    if (item.classList.contains('page-header__controls-button--active')) {
+      header.className = 'page-header';
+      header.classList.add(`page-header--bg${i + 1}`);
+    }
+  });
+};
+
+sliderBtns.forEach(() => {
   addEventListener('click', (evt) => {
     evt.preventDefault();
     const target = evt.target;
@@ -37,14 +44,7 @@ sliderBtns.forEach(btn => {
     if (target && target.classList.contains('page-header__controls-button')) {
       removeActive();
       evt.target.classList.add('page-header__controls-button--active');
-
-      btnsArr.forEach((item, i) => {
-        if (item.classList.contains('page-header__controls-button--active')) {
-          header.className = 'page-header';
-          header.classList.add(`page-header--bg${i + 1}`);
-        }
-      });
+      showSlide();
     }
   });
-  btnsArr.push(btn);
 });
