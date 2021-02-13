@@ -11,26 +11,26 @@
   opacity: 0.5;
 
   &--fb {
-    background-image: url("../img/facebook.svg");
+    background-image: url("../img/icons/facebook.svg");
 
     &:hover {
-      background-image: url("../img/facebook-hover.svg");
+      background-image: url("../img/icons/facebook-hover.svg");
     }
   }
 
   &--twitter {
-    background-image: url("../img/twitter.svg");
+    background-image: url("../img/icons/twitter.svg");
 
     &:hover {
-      background-image: url("../img/twitter-hover.svg");
+      background-image: url("../img/icons/twitter-hover.svg");
     }
   }
 
   &--pinterest {
-    background-image: url("../img/pinterest.svg");
+    background-image: url("../img/icons/pinterest.svg");
 
     &:hover {
-      background-image: url("../img/pinterest-hover.svg");
+      background-image: url("../img/icons/pinterest-hover.svg");
     }
   }
 }

@@ -39,12 +39,12 @@
   }
 
   &--first::after {
-    background-image: url("../img/briefcase.svg");
+    background-image: url("../img/icons/briefcase.svg");
   }
 
   &--second::after {
     top: 95px;
-    background-image: url("../img/mail.svg");
+    background-image: url("../img/icons/mail.svg");
 
     @include _1300 {
       top: 30px;
