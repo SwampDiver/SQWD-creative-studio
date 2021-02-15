@@ -1,5 +1,7 @@
 .services-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding: 50px 50px 35px;
   max-width: 373px;
   background-color: #fff;
@@ -51,6 +53,7 @@
 }
 
 .services-card__description {
+  flex-grow: 1;
   margin: 0 0 20px;
   font-size: 12px;
   line-height: 25px;

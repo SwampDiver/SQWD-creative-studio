@@ -29,6 +29,7 @@
   @include font(400, 14px, 21px, #fff);
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   letter-spacing: 0.2em;
 
@@ -58,12 +59,13 @@
 
 .main-nav__item {
   position: relative;
+  padding: 10px 0;
 
   &::after {
     content: "";
     position: absolute;
     right: 28px;
-    bottom: -3px;
+    bottom: 6px;
     width: 18px;
     height: 2px;
     background-color: #4caf50;
