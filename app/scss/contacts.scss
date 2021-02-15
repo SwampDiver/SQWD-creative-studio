@@ -47,6 +47,10 @@
     background-image: url("../img/icons/mail.svg");
 
     @include _1300 {
+      top: 65px;
+    }
+
+    @include _900 {
       top: 30px;
     }
   }

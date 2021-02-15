@@ -85,6 +85,21 @@
   }
 }
 
+.team-card__image {
+  width: 370px;
+  height: 398px;
+
+  @include _1300 {
+    width: 278px;
+    height: 299px;
+  }
+
+  @include _500 {
+    width: 185px;
+    height: 199px;
+  }
+}
+
 .team-card__text-wrapper {
   position: absolute;
   left: 0;

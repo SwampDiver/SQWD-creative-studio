@@ -9,6 +9,10 @@
   @include _1100 {
     margin-bottom: 60px;
   }
+
+  @include _700 {
+    margin-bottom: 30px;
+  }
 }
 
 .services__content-wrapper {
@@ -23,12 +27,20 @@
   @include _900 {
     padding: 60px 30px;
   }
+
+  @include _700 {
+    padding: 30px;
+  }
 }
 
 .services__title {
   @include title;
 
   margin-bottom: 85px;
+
+  @include _900 {
+    margin-bottom: 60px;
+  }
 }
 
 .services__cards-wrapper {

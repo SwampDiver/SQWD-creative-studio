@@ -7,6 +7,10 @@
   @include _1300 {
     padding-bottom: 80px;
   }
+
+  @include _700 {
+    padding-bottom: 30px;
+  }
 }
 
 .portfolio__title {
@@ -95,6 +99,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  @include _700 {
+    margin-bottom: 0;
   }
 }
 
