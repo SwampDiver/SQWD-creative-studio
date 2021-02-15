@@ -48,3 +48,44 @@ sliderBtns.forEach(() => {
     }
   });
 });
+
+//reviews slider
+
+const prev = document.querySelector('.reviews__button--back');
+const next = document.querySelector('.reviews__button--forward');
+const slides = document.querySelectorAll('.reviews__feedback');
+
+let index = 0;
+
+console.log(prev, next, slides.length);
+
+const activeSlide = n => {
+  for (let slide of slides) {
+    slide.classList.remove('reviews__feedback--active');
+  }
+  slides[n].classList.add('reviews__feedback--active');
+};
+
+const nextSlide = () => {
+  if (index == slides.length - 1) {
+    index = 0;
+    activeSlide(index);
+  } else {
+    index++;
+    activeSlide(index);
+  }
+};
+
+const prevSlide = () => {
+  if (index == 0) {
+    index = slides.length - 1;
+    activeSlide(index);
+  } else {
+    index--;
+    activeSlide(index);
+  }
+};
+
+next.addEventListener('click', nextSlide);
+prev.addEventListener('click', prevSlide);
+
