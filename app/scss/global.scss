@@ -8,6 +8,11 @@ html {
   box-sizing: inherit;
 }
 
+*::selection {
+  color: #fff;
+  background: #70bd59;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -29,6 +34,14 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+// h1::selection,
+// h2::selection,
+// h3::selection,
+// p::selection {
+//   color: #fff;
+//   background: #70bf73;
+// }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
