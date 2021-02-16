@@ -27,6 +27,31 @@ const removeActive = () => {
   });
 };
 
+let i = 0;
+
+const activeBtn = n => {
+  for (let button of sliderBtns) {
+    button.classList.remove('page-header__controls-button--active');
+  }
+  sliderBtns[n].classList.add('page-header__controls-button--active');
+  showSlide();
+};
+
+
+const slideChange = () => {
+  if (i == sliderBtns.length - 1) {
+    i = 0;
+    activeBtn(i);
+  } else {
+    i++;
+    activeBtn(i);
+  }
+};
+
+setInterval(slideChange, 4000);
+
+
+
 const showSlide = () => {
   sliderBtns.forEach((item, i) => {
     if (item.classList.contains('page-header__controls-button--active')) {
@@ -56,8 +81,6 @@ const next = document.querySelector('.reviews__button--forward');
 const slides = document.querySelectorAll('.reviews__feedback');
 
 let index = 0;
-
-console.log(prev, next, slides.length);
 
 const activeSlide = n => {
   for (let slide of slides) {
