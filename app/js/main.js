@@ -16,16 +16,10 @@ menuButton.addEventListener('click', (evt) => {
   logo.classList.toggle("page-header__logo--in-menu");
 });
 
-// background image
+// background slider
 
 const header = document.querySelector('.page-header'),
-  sliderBtns = header.querySelectorAll('.page-header__controls-button');
-
-const removeActive = () => {
-  sliderBtns.forEach(btn => {
-    btn.classList.remove('page-header__controls-button--active');
-  });
-};
+      sliderBtns = header.querySelectorAll('.page-header__controls-button');
 
 let i = 0;
 
@@ -37,6 +31,11 @@ const activeBtn = n => {
   showSlide();
 };
 
+const removeActive = () => {
+  sliderBtns.forEach(btn => {
+    btn.classList.remove('page-header__controls-button--active');
+  });
+};
 
 const slideChange = () => {
   if (i == sliderBtns.length - 1) {
@@ -48,10 +47,6 @@ const slideChange = () => {
   }
 };
 
-setInterval(slideChange, 4000);
-
-
-
 const showSlide = () => {
   sliderBtns.forEach((item, i) => {
     if (item.classList.contains('page-header__controls-button--active')) {
@@ -61,7 +56,15 @@ const showSlide = () => {
   });
 };
 
-sliderBtns.forEach(() => {
+let slideInterval = setInterval(slideChange, 4000);
+
+const btnsArr = [];
+
+sliderBtns.forEach(item => {
+  btnsArr.push(item);
+});
+
+btnsArr.forEach(() => {
   addEventListener('click', (evt) => {
     evt.preventDefault();
     const target = evt.target;
@@ -70,6 +73,9 @@ sliderBtns.forEach(() => {
       removeActive();
       evt.target.classList.add('page-header__controls-button--active');
       showSlide();
+      clearInterval(slideInterval);
+      slideInterval = setInterval(slideChange, 4000);
+      i = btnsArr.indexOf(target);
     }
   });
 });
@@ -111,4 +117,3 @@ const prevSlide = () => {
 
 next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
-
