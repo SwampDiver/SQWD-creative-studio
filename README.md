@@ -1,4 +1,4 @@
-# [SQWD creative studio](https://swampdiver.github.io/creative-studio/)
+# [SQWD creative studio](https://swampdiver.github.io/SQWD-creative-studio/)
 
 - Adaptive, cross browser, a11y
 - BEM
@@ -6,4 +6,4 @@
 - Sass/SCSS
 - Flex, grid
 - Gulp
-- JavaScript: menu (mobile), slider (first screen)
+- JavaScript: menu (mobile), sliders (first screen and reviews section)
