@@ -112,11 +112,11 @@
   position: absolute;
   right: 20px;
   bottom: 200px;
+  outline-color: #70bf73;
   padding: 15px;
   letter-spacing: 2px;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: #70bf73;
   }
 

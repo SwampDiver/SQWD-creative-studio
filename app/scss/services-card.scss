@@ -63,6 +63,7 @@
 .services-card__link {
   @include font(300, 10px, 25px, #252525);
 
+  outline-color: #70bf73;
   letter-spacing: 0.6px;
   opacity: 0.5;
 
